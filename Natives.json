@@ -60115,7 +60115,7 @@
             "jhash": "0x2F7AA05C",
             "params": [
                 {
-                    "type": "Object",
+                    "type": "Hash",
                     "name": "modelHash"
                 },
                 {
