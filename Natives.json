@@ -21636,7 +21636,7 @@
             "return_size": 0
         }
     },
-    "FILE": {
+    "FILES": {
         "0x341DE7ED1D2A1BFD": {
             "name": "_0x341DE7ED1D2A1BFD",
             "comment": "6,000+ calls from scripts, all with either 0 or 1 for p2, that's a boolean in my book\n\n---\n ^ The last one is the componentId\niVar8 = dlc1::get_hash_name_for_component(iParam0, 8, ped::get_ped_drawable_variation(iParam0, 8), ped::get_ped_texture_variation(iParam0, 8));\n                 if (dlc1::_0x341DE7ED1D2A1BFD(iVar8, 240476421, 8))",
