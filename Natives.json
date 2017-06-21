@@ -60110,7 +60110,7 @@
             "return_size": 1
         },
         "0x509D5878EB39E842": {
-            "name": "Object",
+            "name": "CREATE_OBJECT",
             "comment": "p5 - last parameter does not mean object handle is returned\nmaybe a quick view in disassembly will tell us what is actually does\n\n----------\n\nprop_tt_screenstatic (0xE2E039BC) is handled different. Not sure how yet but it I know it is.\nthx fr Xenus.oida ",
             "jhash": "0x2F7AA05C",
             "params": [
@@ -66052,7 +66052,7 @@
             "return_size": 1
         },
         "0xD49F9B0955C367DE": {
-            "name": "Ped",
+            "name": "CREATE_PED",
             "comment": "p7 - last parameter does not mean ped handle is returned\nmaybe a quick view in disassembly will tell us what is actually does\n\n\n*Heading*: 0.0\n*Heading* is the Z axis spawn rotation of the ped 0->5th parameter.\n\nPed Types:\n[Player,1|Male,4|Female,5|Cop,6|Human,26|SWAT,27|Animal,28|Army,29]\nYou can also use GET_PED_TYPE",
             "jhash": "0x0389EF71",
             "params": [
@@ -75963,7 +75963,7 @@
             "return_size": 0
         },
         "0xE832D760399EB220": {
-            "name": "Object",
+            "name": "ADD_ROPE",
             "comment": "Creates a rope at the specific position, that extends in the specified direction when not attached to any entities.\n__\n\nAdd_Rope(pos.x,pos.y,pos.z,0.0,0.0,0.0,20.0,4,20.0,1.0,0.0,false,false,false,5.0,false,NULL)\n\nWhen attached, Position<vector> does not matter\nWhen attached, Angle<vector> does not matter\n\nRope Type:\n4 and bellow is a thick rope\n5 and up are small metal wires\n0 crashes the game\n\nMax_length - Rope is forced to this length, generally best to keep this the same as your rope length.\n\nRigid - If max length is zero, and this is set to false the rope will become rigid (it will force a specific distance, what ever length is, between the objects).\n\nbreakable - Whether or not shooting the rope will break it.\n\nunkPtr - unknown ptr, always 0 in orig scripts\n__\n\nLengths can be calculated like so:\n\nfloat distance = abs(x1 - x2) + abs(y1 - y2) + abs(z1 - z2); // Rope length\n\n\nNOTES:\n\nRope does NOT interact with anything you attach it to, in some cases it make interact with the world AFTER it breaks (seems to occur if you set the type to -1).\n\nRope will sometimes contract and fall to the ground like you'd expect it to, but since it doesn't interact with the world the effect is just jaring.",
             "jhash": "0xA592EC74",
             "params": [
@@ -90331,7 +90331,7 @@
             "return_size": 1
         },
         "0xAF35D0D2583051B0": {
-            "name": "Vehicle",
+            "name": "CREATE_VEHICLE",
             "comment": "p6 - last parameter does not mean vehicle handle is returned\nmaybe a quick view in disassembly will tell us what is actually does\n\n\np6 seems to check for something with the script in the disassembly",
             "jhash": "0xDD75460A",
             "params": [
