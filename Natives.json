@@ -38608,7 +38608,7 @@
             "return_size": 1
         },
         "0x35AD299F50D91B24": {
-            "name": "Any",
+            "name": "CREATE_ITEMSET",
             "comment": "",
             "jhash": "0x0A113B2C",
             "params": [
@@ -86781,7 +86781,7 @@
             "return_size": 0
         },
         "0xEB0A72181D4AA4AD": {
-            "name": "Any",
+            "name": "STAT_CLEAR_SLOT_FOR_RELOAD",
             "comment": "Please change to \"void\"!\n---------------------------------\n\nExample:\n\nfor (v_2 = 0; v_2 <= 4; v_2 += 1) {\n    STATS::STAT_CLEAR_SLOT_FOR_RELOAD(v_2);\n}",
             "jhash": "0x84BDD475",
             "params": [
