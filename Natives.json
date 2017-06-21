@@ -17395,8 +17395,9 @@
             "return_size": 1
         },
         "0x6524A2F114706F43": {
-            "name": "_DECOR_GET_FLOAT",
-            "comment": "Console Hash: 0x8DE5382F\n\nThe native name is correct but the db automatically prefixes \"_\" to unknown natives when changed.",
+            "name": "DECOR_GET_FLOAT",
+            "comment": "",
+            "jhash": "0x8DE5382F",
             "params": [
                 {
                     "type": "Entity",
@@ -17515,8 +17516,9 @@
             "return_size": 1
         },
         "0x211AB1DD8D0F363A": {
-            "name": "_DECOR_SET_FLOAT",
-            "comment": "Console Hash: 0xBC7BD5CB\n\nThe native name is correct but the db automatically prefixes \"_\" to unknown natives when changed.",
+            "name": "DECOR_SET_FLOAT",
+            "comment": "",
+            "jhash": "0xBC7BD5CB",
             "params": [
                 {
                     "type": "Entity",
