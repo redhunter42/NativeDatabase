@@ -1913,10 +1913,35 @@
         "0x5B9853296731E88D": {
             "name": "_0x5B9853296731E88D",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                },
+                {
+                    "type": "Any",
+                    "name": "p4"
+                },
+                {
+                    "type": "Any",
+                    "name": "p5"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 6,
+            "return_size": 0
         },
         "0x67C540AA08E4A6F5": {
             "name": "PLAY_SOUND_FRONTEND",
@@ -2205,9 +2230,9 @@
             "name": "_0x5D2BFAAB8D956E0E",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void",
+            "param_count": 0,
+            "return_size": 0
         },
         "0x77ED170667F50170": {
             "name": "RELEASE_NAMED_SCRIPT_AUDIO_BANK",
@@ -2843,10 +2868,15 @@
         "0x159B7318403A1CD8": {
             "name": "_0x159B7318403A1CD8",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 1,
+            "return_size": 0
         },
         "0x3BD3F52BA9B1E4E8": {
             "name": "SET_GPS_ACTIVE",
@@ -17516,7 +17546,7 @@
             "return_size": 1
         },
         "0x211AB1DD8D0F363A": {
-            "name": "DECOR_SET_FLOAT",
+            "name": "_DECOR_SET_FLOAT",
             "comment": "",
             "jhash": "0xBC7BD5CB",
             "params": [
@@ -30822,8 +30852,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 0
         },
         "0xCC3FDDED67BCFC63": {
             "name": "_0xCC3FDDED67BCFC63",
@@ -32030,8 +32060,8 @@
                 }
             ],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 5,
+            "return_size": 1
         },
         "0x1CCD9A37359072CF": {
             "name": "_SET_NOTIFICATION_MESSAGE_2",
@@ -32427,8 +32457,8 @@
                 }
             ],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 4,
+            "return_size": 1
         },
         "0x7AE0589093A2E088": {
             "name": "_0x7AE0589093A2E088",
@@ -32557,12 +32587,13 @@
             "param_count": 1,
             "return_size": 0
         },
-        "0xA5BC9F220008993F": {
-            "name": "_0xA5BC9F220008993F",
+        "0xA18AFB39081B6A1F": {
+            "name": "FLASH_WANTED_DISPLAY",
             "comment": "",
+            "jhash": "0x629F866B",
             "params": [
                 {
-                    "type": "Any",
+                    "type": "bool",
                     "name": "p0"
                 }
             ],
@@ -32601,10 +32632,9 @@
             "param_count": 1,
             "return_size": 0
         },
-        "0xA18AFB39081B6A1F": {
-            "name": "FLASH_WANTED_DISPLAY",
+        "0xBA8D65C1C65702E5": {
+            "name": "_0xBA8D65C1C65702E5",
             "comment": "",
-            "jhash": "0x629F866B",
             "params": [
                 {
                     "type": "bool",
@@ -34105,8 +34135,8 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0x09C0403ED9A751C2": {
             "name": "_0x09C0403ED9A751C2",
@@ -34119,8 +34149,8 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0x2F057596F2BD0061": {
             "name": "_0x2F057596F2BD0061",
@@ -34165,8 +34195,8 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0xE18B138FABC53103": {
             "name": "IS_WARNING_MESSAGE_ACTIVE",
@@ -34904,17 +34934,18 @@
             "param_count": 2,
             "return_size": 0
         },
-        "0x031554A73746D4A5": {
-            "name": "_0x031554A73746D4A5",
-            "comment": "",
+        "0x2B6D467DAB714E8D": {
+            "name": "_SET_BLIP_SHRINK",
+            "comment": "Makes a blip go small when off the minimap.",
+            "jhash": "0xC575F0BC",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Blip",
+                    "name": "blip"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "bool",
+                    "name": "toggle"
                 }
             ],
             "return_type": "void",
@@ -35442,18 +35473,17 @@
             "param_count": 2,
             "return_size": 0
         },
-        "0x2B6D467DAB714E8D": {
-            "name": "_SET_BLIP_SHRINK",
-            "comment": "Makes a blip go small when off the minimap.",
-            "jhash": "0xC575F0BC",
+        "0x2C9F302398E13141": {
+            "name": "_0x2C9F302398E13141",
+            "comment": "",
             "params": [
                 {
-                    "type": "Blip",
-                    "name": "blip"
+                    "type": "Any",
+                    "name": "p0"
                 },
                 {
-                    "type": "bool",
-                    "name": "toggle"
+                    "type": "Any",
+                    "name": "p1"
                 }
             ],
             "return_type": "void",
@@ -35677,8 +35707,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 6,
+            "return_size": 0
         },
         "0xB094BC1DB4018240": {
             "name": "_0xB094BC1DB4018240",
@@ -36193,8 +36223,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 0
         },
         "0x613ED644950626AE": {
             "name": "SET_MP_GAMER_TAG_COLOUR",
@@ -36251,16 +36281,25 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 0
         },
         "0x9C16459B2324B2CF": {
             "name": "_0x9C16459B2324B2CF",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 2,
+            "return_size": 0
         },
         "0x63BB75ABEDC1F6A0": {
             "name": "SET_MP_GAMER_TAG_VISIBILITY",
@@ -36299,8 +36338,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 0
         },
         "0xDD21B55DF695CD0A": {
             "name": "SET_MULTIPLAYER_BANK_CASH",
@@ -37902,8 +37941,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 0
         },
         "0xB57D8DD645CFA2CF": {
             "name": "CLEAR_REMINDER_MESSAGE",
@@ -39763,10 +39802,15 @@
         "0x0CF97F497FE7D048": {
             "name": "_0x0CF97F497FE7D048",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 1,
+            "return_size": 0
         },
         "0xCCC39339BEF76CF5": {
             "name": "CLEAR_WEATHER_TYPE_PERSIST",
@@ -41412,8 +41456,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 0
         },
         "0xA61B4DF533DCB56E": {
             "name": "IS_AREA_OCCUPIED",
@@ -42278,8 +42322,8 @@
             "comment": "",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x684A41975F077262": {
             "name": "_0x684A41975F077262",
@@ -45832,8 +45876,8 @@
             "comment": "",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x6F44CBF56D79FAC0": {
             "name": "_0x6F44CBF56D79FAC0",
@@ -47936,8 +47980,8 @@
             "jhash": "0x38BC35C8",
             "params": [],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 0
         },
         "0x6CE50E47F5543D0C": {
             "name": "_0x6CE50E47F5543D0C",
@@ -48854,8 +48898,8 @@
             "jhash": "0x053BB329",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x187382F8A3E0A6C3": {
             "name": "_GET_TUNABLES_CONTENT_MODIFIER_ID",
@@ -48976,8 +49020,8 @@
                 }
             ],
             "return_type": "Entity",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 1
         },
         "0x9DCFF2AFB68B3476": {
             "name": "NETWORK_GET_FOUND_GAMER",
@@ -49282,8 +49326,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 3,
+            "return_size": 0
         },
         "0xD38C4A6D047C019D": {
             "name": "_0xD38C4A6D047C019D",
@@ -49291,8 +49335,8 @@
             "jhash": "0x17CBC608",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0xA4A79DD2D9600654": {
             "name": "NETWORK_GET_NUM_CONNECTED_PLAYERS",
@@ -49475,8 +49519,8 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0x3B39236746714134": {
             "name": "_0x3B39236746714134",
@@ -50001,8 +50045,8 @@
             "jhash": "0x9A176B6E",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x2E0BF682CC778D49": {
             "name": "_0x2E0BF682CC778D49",
@@ -50015,8 +50059,8 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0x237D5336A9A54108": {
             "name": "_0x237D5336A9A54108",
@@ -51308,16 +51352,16 @@
             "comment": "",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x6512765E3BE78C50": {
             "name": "_0x6512765E3BE78C50",
             "comment": "",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x0B824797C9BF2159": {
             "name": "NETWORK_IS_TRANSITION_HOST",
@@ -51373,16 +51417,16 @@
             "comment": "NETWORK_IS_TRANSITION_???",
             "params": [],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x5DC577201723960A": {
             "name": "_0x5DC577201723960A",
             "comment": "NETWORK_IS_TRANSITION_???",
             "params": [],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x53FA83401D9C07FE": {
             "name": "NETWORK_IS_TRANSITION_STARTED",
@@ -52796,8 +52840,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 0
         },
         "0x3442775428FD2DAA": {
             "name": "NETWORK_SESSION_LEAVE_SINGLE_PLAYER",
@@ -52947,10 +52991,15 @@
         "0x59D421683D31835A": {
             "name": "_0x59D421683D31835A",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 1,
+            "return_size": 0
         },
         "0x1153FA02A659051C": {
             "name": "_0x1153FA02A659051C",
@@ -53146,8 +53195,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 0
         },
         "0x0EDE326D47CD0F3E": {
             "name": "_0x0EDE326D47CD0F3E",
@@ -53580,8 +53629,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 0
         },
         "0x9D7AFCBF21C51712": {
             "name": "_0x9D7AFCBF21C51712",
@@ -53782,8 +53831,8 @@
             "comment": "",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x83FE8D7229593017": {
             "name": "_0x83FE8D7229593017",
@@ -54501,13 +54550,12 @@
             "param_count": 1,
             "return_size": 1
         },
-        "0x76B02E21ED27A469": {
-            "name": "RESERVE_NETWORK_MISSION_VEHICLES",
+        "0x42613035157E4208": {
+            "name": "_0x42613035157E4208",
             "comment": "",
-            "jhash": "0x5062875E",
             "params": [
                 {
-                    "type": "int",
+                    "type": "Any",
                     "name": "p0"
                 }
             ],
@@ -54543,12 +54591,13 @@
             "param_count": 1,
             "return_size": 0
         },
-        "0x7E04478E16257BA0": {
-            "name": "_0x7E04478E16257BA0",
+        "0x76B02E21ED27A469": {
+            "name": "RESERVE_NETWORK_MISSION_VEHICLES",
             "comment": "",
+            "jhash": "0x5062875E",
             "params": [
                 {
-                    "type": "Any",
+                    "type": "int",
                     "name": "p0"
                 }
             ],
@@ -55171,8 +55220,8 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 3,
+            "return_size": 1
         },
         "0xA12D3A5A3753CC23": {
             "name": "_0xA12D3A5A3753CC23",
@@ -56514,8 +56563,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 0
         },
         "0x4A9FDE3A5A6D0437": {
             "name": "_0x4A9FDE3A5A6D0437",
@@ -56607,16 +56656,16 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 0
         },
         "0x5C497525F803486B": {
             "name": "_0x5C497525F803486B",
             "comment": "",
             "params": [],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 0
         },
         "0xAEDF1BC1C133D6E3": {
             "name": "_0xAEDF1BC1C133D6E3",
@@ -61723,10 +61772,19 @@
         "0x826D1EE4D1CAFC78": {
             "name": "_0x826D1EE4D1CAFC78",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 2,
+            "return_size": 0
         },
         "0xBCE595371A5FBAAF": {
             "name": "_0xBCE595371A5FBAAF",
@@ -65470,10 +65528,19 @@
         "0x2DFC81C9B9608549": {
             "name": "_0x2DFC81C9B9608549",
             "comment": "",
-            "params": [],
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 1
         },
         "0x9C6A6C19B6C0C496": {
             "name": "_0x9C6A6C19B6C0C496",
@@ -65489,8 +65556,8 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 1
         },
         "0xCD8A7537A9B52F06": {
             "name": "CLEAR_ALL_PED_PROPS",
@@ -66866,8 +66933,8 @@
                 }
             ],
             "return_type": "Ped",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0x460BC76A0E10655E": {
             "name": "IS_PED_ON_MOUNT",
@@ -67241,8 +67308,8 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 3,
+            "return_size": 1
         },
         "0x71EAB450D86954A1": {
             "name": "GET_PED_DECORATIONS_STATE",
@@ -68027,8 +68094,8 @@
                 }
             ],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0xF92691AED837A5FC": {
             "name": "SET_EXCLUSIVE_PHONE_RELATIONSHIPS",
@@ -68150,8 +68217,8 @@
             "jhash": "0x05023F8F",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0xE8A169E666CBC541": {
             "name": "_0xE8A169E666CBC541",
@@ -68159,8 +68226,8 @@
             "jhash": "0xAA39FD6C",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x654CD0A825161131": {
             "name": "HAS_PED_HEAD_BLEND_FINISHED",
@@ -68461,8 +68528,8 @@
             "jhash": "0x810158F8",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x7085228842B13A67": {
             "name": "IS_PEDHEADSHOT_READY",
@@ -69792,10 +69859,15 @@
         "0x3795688A307E1EB6": {
             "name": "_0x3795688A307E1EB6",
             "comment": "",
-            "params": [],
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0x14590DDBEDB1EC85": {
             "name": "_0x14590DDBEDB1EC85",
@@ -70173,10 +70245,15 @@
         "0xBA8805A1108A2515": {
             "name": "_0xBA8805A1108A2515",
             "comment": "",
-            "params": [],
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0x953563CE563143AF": {
             "name": "_0x953563CE563143AF",
@@ -70189,8 +70266,8 @@
                 }
             ],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0x2F25D9AEFA34FBA2": {
             "name": "REGISTER_TARGET",
@@ -70221,8 +70298,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 0
         },
         "0xF79F9DEF0AADE61A": {
             "name": "_0xF79F9DEF0AADE61A",
@@ -70438,8 +70515,8 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0xCD018C591F94CB43": {
             "name": "_0xCD018C591F94CB43",
@@ -70455,8 +70532,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 0
         },
         "0x75BA1CB3B7D40CAF": {
             "name": "_0x75BA1CB3B7D40CAF",
@@ -70473,8 +70550,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 0
         },
         "0x2BC338A7B21F4608": {
             "name": "GET_PED_FLOOD_INVINCIBILITY",
@@ -77826,8 +77903,8 @@
                 }
             ],
             "return_type": "Vector3",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 3
         },
         "0xE28E54788CE8F12D": {
             "name": "GET_PLAYER_WANTED_LEVEL",
@@ -77928,8 +78005,8 @@
                 }
             ],
             "return_type": "float",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0xFDD179EAF45B556C": {
             "name": "GET_WANTED_LEVEL_THRESHOLD",
@@ -78016,8 +78093,8 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0xE4B90F367BD81752": {
             "name": "HAS_PLAYER_DAMAGED_AT_LEAST_ONE_NON_ANIMAL_PED",
@@ -78785,10 +78862,19 @@
         "0x2382AB11450AE7BA": {
             "name": "_0x2382AB11450AE7BA",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 2,
+            "return_size": 0
         },
         "0x9F343285A00B4BB6": {
             "name": "SET_AUTO_GIVE_PARACHUTE_WHEN_ENTER_PLANE",
@@ -80960,8 +81046,8 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0xD8F66A3A60C62153": {
             "name": "GET_EVENT_AT_INDEX",
@@ -81756,8 +81842,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 0
         },
         "0xC2C97EA97711D1AE": {
             "name": "_0xC2C97EA97711D1AE",
@@ -82109,8 +82195,8 @@
             "jhash": "0x468668F0",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x418DC16FAE452C1C": {
             "name": "_0x418DC16FAE452C1C",
@@ -82131,8 +82217,8 @@
             "jhash": "0x6C5738AB",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x87E0052F08BD64E6": {
             "name": "_0x87E0052F08BD64E6",
@@ -83841,10 +83927,15 @@
         "0x47B32F5611E6E483": {
             "name": "_0x47B32F5611E6E483",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 1,
+            "return_size": 0
         },
         "0x46F917F6B4128FE4": {
             "name": "PLAYSTATS_AWARD_XP",
@@ -84700,8 +84791,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 0
         },
         "0x7D8BA05688AD64C7": {
             "name": "_0x7D8BA05688AD64C7",
@@ -84937,10 +85028,39 @@
         "0x03C2EEBB04B3FB72": {
             "name": "_0x03C2EEBB04B3FB72",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                },
+                {
+                    "type": "Any",
+                    "name": "p4"
+                },
+                {
+                    "type": "Any",
+                    "name": "p5"
+                },
+                {
+                    "type": "Any",
+                    "name": "p6"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 7,
+            "return_size": 0
         },
         "0xF534D94DFA2EAD26": {
             "name": "_0xF534D94DFA2EAD26",
@@ -85287,8 +85407,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 0
         },
         "0x04D90BA8207ADA2D": {
             "name": "_0x04D90BA8207ADA2D",
@@ -85636,10 +85756,15 @@
         "0x7033EEFD9B28088E": {
             "name": "_0x7033EEFD9B28088E",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 1,
+            "return_size": 0
         },
         "0x015B03EE1C43E6EC": {
             "name": "_0x015B03EE1C43E6EC",
@@ -85813,10 +85938,23 @@
         "0x96E6D5150DBF1C09": {
             "name": "_0x96E6D5150DBF1C09",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 3,
+            "return_size": 0
         },
         "0x9B4BD21D69B1E609": {
             "name": "_0x9B4BD21D69B1E609",
@@ -86575,8 +86713,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 0
         },
         "0x26D7399B9587FE89": {
             "name": "_0x26D7399B9587FE89",
@@ -87232,8 +87370,8 @@
             "jhash": "0x7154B6FD",
             "params": [],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x4060057271CEBC89": {
             "name": "GET_NUMBER_OF_STREAMING_REQUESTS",
@@ -87494,10 +87632,15 @@
         "0x75816577FEA6DAD5": {
             "name": "_0x75816577FEA6DAD5",
             "comment": "",
-            "params": [],
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 1,
+            "return_size": 1
         },
         "0x19AAC8F07BFEC53E": {
             "name": "IS_MODEL_A_VEHICLE",
@@ -90538,8 +90681,8 @@
             "jhash": "0x65255524",
             "params": [],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 0
         },
         "0x500873A45724C863": {
             "name": "_0x500873A45724C863",
@@ -93612,10 +93755,23 @@
         "0xB09D25E77C33EB3F": {
             "name": "_0xB09D25E77C33EB3F",
             "comment": "",
-            "params": [],
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                }
+            ],
             "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "param_count": 3,
+            "return_size": 1
         },
         "0x4198AB0022B15F87": {
             "name": "_VEHICLE_HAS_LANDING_GEAR",
@@ -94870,9 +95026,9 @@
             "name": "_0xE2F53F172B45EDE1",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void",
+            "param_count": 0,
+            "return_size": 0
         },
         "0xD7591B0065AFAA7A": {
             "name": "RESET_VEHICLE_STUCK_TIMER",
@@ -96038,10 +96194,31 @@
         "0x428AD3E26C8D9EB0": {
             "name": "_0x428AD3E26C8D9EB0",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                },
+                {
+                    "type": "Any",
+                    "name": "p4"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 5,
+            "return_size": 0
         },
         "0x2AFD795EEAC8D30D": {
             "name": "SET_GARBAGE_TRUCKS",
@@ -96103,10 +96280,19 @@
         "0xAB31EF4DE6800CE9": {
             "name": "_0xAB31EF4DE6800CE9",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 2,
+            "return_size": 0
         },
         "0xA178472EBB8AE60D": {
             "name": "SET_HELI_BLADES_FULL_SPEED",
@@ -96845,8 +97031,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 2,
+            "return_size": 0
         },
         "0x063AE2B2CC273588": {
             "name": "_0x063AE2B2CC273588",
@@ -99824,8 +100010,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 3,
+            "return_size": 0
         },
         "0xFE54B92A344583CA": {
             "name": "_SET_TOW_TRUCK_CRANE_HEIGHT",
@@ -101162,22 +101348,21 @@
             "param_count": 3,
             "return_size": 0
         },
-        "0x5FD1E1F011E76D7E": {
-            "name": "SET_PED_AMMO_BY_TYPE",
+        "0x2472622CE1F2D45F": {
+            "name": "_0x2472622CE1F2D45F",
             "comment": "",
-            "jhash": "0x311C52BB",
             "params": [
                 {
-                    "type": "Ped",
-                    "name": "ped"
+                    "type": "Any",
+                    "name": "p0"
                 },
                 {
                     "type": "Any",
-                    "name": "ammoType"
+                    "name": "p1"
                 },
                 {
-                    "type": "int",
-                    "name": "ammo"
+                    "type": "Any",
+                    "name": "p2"
                 }
             ],
             "return_type": "void",
@@ -101440,10 +101625,27 @@
         "0x44F1012B69313374": {
             "name": "_0x44F1012B69313374",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                }
+            ],
+            "return_type": "void",
+            "param_count": 4,
+            "return_size": 0
         },
         "0x2E1202248937775C": {
             "name": "GET_AMMO_IN_CLIP",
@@ -102522,9 +102724,9 @@
             "name": "_0x1E45B34ADEBEE48E",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void",
+            "param_count": 0,
+            "return_size": 0
         },
         "0xF25DF915FA38C5F3": {
             "name": "REMOVE_ALL_PED_WEAPONS",
@@ -102824,21 +103026,22 @@
             "param_count": 4,
             "return_size": 0
         },
-        "0xED8B70EF5DA72F44": {
-            "name": "_0xED8B70EF5DA72F44",
+        "0x5FD1E1F011E76D7E": {
+            "name": "SET_PED_AMMO_BY_TYPE",
             "comment": "",
+            "jhash": "0x311C52BB",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Ped",
+                    "name": "ped"
                 },
                 {
                     "type": "Any",
-                    "name": "p1"
+                    "name": "ammoType"
                 },
                 {
-                    "type": "Any",
-                    "name": "p2"
+                    "type": "int",
+                    "name": "ammo"
                 }
             ],
             "return_type": "void",
@@ -102946,8 +103149,8 @@
                 }
             ],
             "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "param_count": 6,
+            "return_size": 0
         },
         "0x6B7513D9966FBEC0": {
             "name": "SET_PED_DROPS_WEAPON",
