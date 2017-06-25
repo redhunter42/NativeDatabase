@@ -86140,7 +86140,7 @@
                     "name": "outValue"
                 },
                 {
-                    "type": "Any",
+                    "type": "int",
                     "name": "p2"
                 }
             ],
@@ -86290,7 +86290,7 @@
                     "name": "outValue"
                 },
                 {
-                    "type": "Any",
+                    "type": "int",
                     "name": "p2"
                 }
             ],
