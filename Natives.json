@@ -1998,8 +1998,8 @@
             "return_size": 0
         },
         "0x21442F412E8DE56B": {
-            "name": "SPECIAL_FRONTEND_EQUAL",
-            "comment": "Hash collision!!! PLAY_STREAM_FROM_POSITION is the correct name!",
+            "name": "PLAY_STREAM_FROM_POSITION",
+            "comment": "",
             "jhash": "0x6FE5D865",
             "params": [
                 {
@@ -10429,8 +10429,9 @@
             "return_size": 0
         },
         "0xFC545A9F0626E3B6": {
-            "name": "_TASK_VEHICLE_FOLLOW",
-            "comment": "Makes a ped in a vehicle follow an entity (ped, vehicle, etc.)\n\ndrivingStyle:\n0 = Rushed\n1 = Ignore Traffic Lights\n2 = Fast\n3 = Normal (Stop in Traffic)\n4 = Fast avoid traffic\n5 = Fast, stops in traffic but overtakes sometimes\n6 = Fast avoids traffic extremely\n\nConsole Hash: 0xA8B917D7\n\nAI::_TASK_VEHICLE_FOLLOW(l_244[3/*1*/], l_268[3/*1*/], l_278, 40.0, 262144, 10);\n\nWhat is this known as in the decompiled scripts ffs. I need more examples. I've searched in all scripts for keywords suchas,\nTASK_VEHICLE_FOLLOW, FC545A9F0626E3B6, 0xFC545A9F0626E3B6, all the parameters in the above example even just search the last few params '40.0, 262144, 10' and couldnt find where this native is used in scripts at all unless whoever decompiled the scripts gave it a whack a.. name.",
+            "name": "TASK_VEHICLE_FOLLOW",
+            "comment": "Makes a ped in a vehicle follow an entity (ped, vehicle, etc.)\n\ndrivingStyle:\n0 = Rushed\n1 = Ignore Traffic Lights\n2 = Fast\n3 = Normal (Stop in Traffic)\n4 = Fast avoid traffic\n5 = Fast, stops in traffic but overtakes sometimes\n6 = Fast avoids traffic extremely\n\nAI::_TASK_VEHICLE_FOLLOW(l_244[3/*1*/], l_268[3/*1*/], l_278, 40.0, 262144, 10);\n\nWhat is this known as in the decompiled scripts ffs. I need more examples. I've searched in all scripts for keywords suchas,\nTASK_VEHICLE_FOLLOW, FC545A9F0626E3B6, 0xFC545A9F0626E3B6, all the parameters in the above example even just search the last few params '40.0, 262144, 10' and couldnt find where this native is used in scripts at all unless whoever decompiled the scripts gave it a whack a.. name.",
+                "jhash": "0xA8B917D7",
             "params": [
                 {
                     "type": "Ped",
@@ -15523,8 +15524,9 @@
             "return_size": 0
         },
         "0x8117E09A19EEF4D3": {
-            "name": "_GET_UTC_TIME",
-            "comment": "console hash: 0xC589CD7D = GET_UTC_TIME\ngets current UTC time ",
+            "name": "GET_UTC_TIME",
+            "comment": "Gets current UTC time ",
+            "jhash": "0xC589CD7D",
             "params": [
                 {
                     "type": "int*",
@@ -18376,8 +18378,9 @@
             "return_size": 0
         },
         "0xFEDDF04D62B8D790": {
-            "name": "_GET_ANIM_DURATION",
-            "comment": "Console Hash: 0x8B5E3E3D = GET_ANIM_DURATION\n\nAnimations List : www.ls-multiplayer.com/dev/index.php?section=3",
+            "name": "GET_ANIM_DURATION",
+            "comment": "Animations List : www.ls-multiplayer.com/dev/index.php?section=3",
+            "jhash": "0x8B5E3E3D",
             "params": [
                 {
                     "type": "const char*",
@@ -18805,8 +18808,9 @@
             "return_size": 1
         },
         "0xF6F5161F4534EDFF": {
-            "name": "_GET_ENTITY_POPULATION_TYPE",
-            "comment": "Console Hash: 0xFC30DDFF\n\nReturns range from 0-10\n\n--------------------------------------------------------------\n\nThe type name can be retrieved by using this:\n\ntypedef LPSTR(__fastcall *GetEntityPopulationTypeName_t)(unsigned __int16 entityPopulationType, bool scriptName);\n   GetEntityPopulationTypeName_t GetEntityPopulationTypeName = (GetEntityPopulationTypeName_t)FindPattern(\"44 0F B7 C1 4C 8D 0D ?? ?? ?? ?? 41 83 F8 07\");",
+            "name": "GET_ENTITY_POPULATION_TYPE",
+            "comment": "Returns range from 0-10\n\n--------------------------------------------------------------\n\nThe type name can be retrieved by using this:\n\ntypedef LPSTR(__fastcall *GetEntityPopulationTypeName_t)(unsigned __int16 entityPopulationType, bool scriptName);\n   GetEntityPopulationTypeName_t GetEntityPopulationTypeName = (GetEntityPopulationTypeName_t)FindPattern(\"44 0F B7 C1 4C 8D 0D ?? ?? ?? ?? 41 83 F8 07\");",
+            "jhash": "0xFC30DDFF",
             "params": [
                 {
                     "type": "Entity",
@@ -29398,8 +29402,9 @@
             "return_size": 1
         },
         "0xC6EB449E33977F0B": {
-            "name": "_START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE",
-            "comment": "Console Hash: 0x23BF0F9B",
+            "name": "START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE",
+            "comment": "",
+            "jhash": "0x23BF0F9B",
             "params": [
                 {
                     "type": "const char*",
@@ -46476,8 +46481,9 @@
             "return_size": 1
         },
         "0xEA16B69D93D71A45": {
-            "name": "_NETWORK_ACCESS_TUNABLE_BOOL_HASH",
-            "comment": "Console Hash - 0x18867C61 = NETWORK_ACCESS_TUNABLE_BOOL_HASH",
+            "name": "NETWORK_ACCESS_TUNABLE_BOOL_HASH",
+            "comment": "",
+            "jhash": "0x18867C61",
             "params": [
                 {
                     "type": "Hash",
@@ -46515,8 +46521,9 @@
             "return_size": 1
         },
         "0x972BC203BBC4C4D5": {
-            "name": "_NETWORK_ACCESS_TUNABLE_FLOAT_HASH",
-            "comment": "Console Hash - 0x3972551F = NETWORK_ACCESS_TUNABLE_FLOAT_HASH",
+            "name": "NETWORK_ACCESS_TUNABLE_FLOAT_HASH",
+            "comment": "",
+            "jhash": "0x3972551F",
             "params": [
                 {
                     "type": "Hash",
@@ -46558,8 +46565,9 @@
             "return_size": 1
         },
         "0x40FCE03E50E8DBE8": {
-            "name": "_NETWORK_ACCESS_TUNABLE_INT_HASH",
-            "comment": "Console Hash - 0xB2E83B75 = NETWORK_ACCESS_TUNABLE_INT_HASH",
+            "name": "NETWORK_ACCESS_TUNABLE_INT_HASH",
+            "comment": "",
+            "jhash": "0xB2E83B75",
             "params": [
                 {
                     "type": "Hash",
@@ -46730,8 +46738,9 @@
             "return_size": 1
         },
         "0x376C6375BA60293A": {
-            "name": "_NETWORK_ADD_ENTITY_ANGLED_AREA",
-            "comment": "Console hash: 0xCD69BEA1",
+            "name": "NETWORK_ADD_ENTITY_ANGLED_AREA",
+            "comment": "",
+            "jhash": "0xCD69BEA1",
             "params": [
                 {
                     "type": "float",
@@ -47141,8 +47150,8 @@
             "return_size": 0
         },
         "0xDBD2056652689917": {
-            "name": "IS_NETWORK_VEHICLE_BEEN_DAMAGED_BY_ANY_OBJECT",
-            "comment": "hash collision.\n\nDefinitely a hash collision, has something do to with your local player, not a vehicle",
+            "name": "_0xDBD2056652689917",
+            "comment": "",
             "jhash": "0xF1E84832",
             "params": [
                 {
@@ -48248,8 +48257,9 @@
             "return_size": 1
         },
         "0xE4E53E1419D81127": {
-            "name": "_NETWORK_DOES_TUNABLE_EXIST_HASH",
-            "comment": "Console Hash - 0x25915CB9 = NETWORK_DOES_TUNABLE_EXIST_HASH",
+            "name": "NETWORK_DOES_TUNABLE_EXIST_HASH",
+            "comment": "",
+            "jhash": "0x25915CB9",
             "params": [
                 {
                     "type": "Hash",
@@ -50006,8 +50016,9 @@
             "return_size": 0
         },
         "0x58575AC3CF2CA8EC": {
-            "name": "_NETWORK_HASH_FROM_GAMER_HANDLE",
-            "comment": "console hash: 0x5AC9F04D = network_hash_from_gamer_handle",
+            "name": "NETWORK_HASH_FROM_GAMER_HANDLE",
+            "comment": "",
+            "jhash": "0x5AC9F04D",
             "params": [
                 {
                     "type": "int*",
@@ -50019,8 +50030,9 @@
             "return_size": 1
         },
         "0xBC1D768F2F5D6C05": {
-            "name": "_NETWORK_HASH_FROM_PLAYER_HANDLE",
-            "comment": "console hash: 0xF8D7AF3B = NETWORK_HASH_FROM_PLAYER_HANDLE",
+            "name": "NETWORK_HASH_FROM_PLAYER_HANDLE",
+            "comment": "",
+            "jhash": "0xF8D7AF3B",
             "params": [
                 {
                     "type": "Player",
@@ -50246,12 +50258,12 @@
             "return_size": 1
         },
         "0xA699957E60D80214": {
-            "name": "_0xA699957E60D80214",
-            "comment": "",
+            "name": "NETWORK_HAS_ROS_PRIVILEGE",
+            "comment": "p0 is always 18 in scripts",
             "jhash": "0xFD261E30",
             "params": [
                 {
-                    "type": "Any",
+                    "type": "int",
                     "name": "p0"
                 }
             ],
@@ -50701,7 +50713,8 @@
         },
         "0x8132C0EB8B2B3293": {
             "name": "_HAS_BG_SCRIPT_BEEN_DOWNLOADED",
-            "comment": "Console Hash - 0x29532731",
+            "comment": "",
+            "jhash": "0x29532731",
             "params": [],
             "return_type": "bool",
             "param_count": 0,
@@ -51448,7 +51461,8 @@
         },
         "0xD0A484CB2F829FBE": {
             "name": "_0xD0A484CB2F829FBE",
-            "comment": "x360 Hash: 0xF637166E",
+            "comment": "",
+            "jhash": "0xF637166E",
             "params": [],
             "return_type": "Any",
             "param_count": 0,
@@ -51456,7 +51470,8 @@
         },
         "0x0467C11ED88B7D28": {
             "name": "_HAS_TUNABLES_BEEN_DOWNLOADED",
-            "comment": "Console Hash - 0x47978D7F",
+            "comment": "",
+            "jhash": "0x47978D7F",
             "params": [],
             "return_type": "bool",
             "param_count": 0,
@@ -51765,8 +51780,9 @@
             "return_size": 0
         },
         "0x97DD4C5944CC2E6A": {
-            "name": "_NETWORK_OVERRIDE_SEND_RESTRICTIONS",
-            "comment": "Console Hash: 0x6C344AE3\n\"NETWORK_OVERRIDE_SEND_RESTRICTIONS\" is right, but dev-c put a _ by default.\n\nThis is used alongside the native,\n'NETWORK_OVERRIDE_RECEIVE_RESTRICTIONS'. Read it's description for more info.",
+            "name": "NETWORK_OVERRIDE_SEND_RESTRICTIONS",
+            "comment": "This is used alongside the native,\n'NETWORK_OVERRIDE_RECEIVE_RESTRICTIONS'. Read it's description for more info.",
+            "jhash": "0x6C344AE3",
             "params": [
                 {
                     "type": "Player",
@@ -52123,9 +52139,9 @@
             "return_size": null
         },
         "0x924426BFFD82E915": {
-            "name": "_NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS",
-            "comment": "NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS - Correct console hash is 0x98EFB921\n\nStart the downloading of BG_NG.RPF from R* Cloud which contains hotfix.\n\nThe console hash given is incorrect for Xbox360 that is. I searched in IDA and found 0x98EFB921 which came right after 0x155465EE. Then I searched it in TU27 X360 scripts and found it was the same results same scripts as the PC Hash for this which is obviously correct. I found the correct one as I noticed TU27 X360 script search pulled no results for 0x29532731 when it should have.\n\nAs you can see here you will see the 155465EE first then the correct hash for this native. Then the current 29532731 one which could be the native below or the native below's hash could be the has below the 29532731 \npuu.sh/nhdQI/e0ca5567b4.png\n\n0x98EFB921 is the correct console hash for \"_DOWNLOAD_BG_SCRIPT_RPF\". 0x29532731 is \"_HAS_BG_SCRIPT_BEEN_DOWNLOADED\"",
-            "jhash": "0x29532731",
+            "name": "NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS",
+            "comment": "Start the downloading of BG_NG.RPF from R* Cloud which contains hotfix.",
+            "jhash": "0x98EFB921",
             "params": [],
             "return_type": "bool",
             "param_count": 0,
@@ -52821,8 +52837,8 @@
             "return_size": 1
         },
         "0xC6F8AB8A4189CF3A": {
-            "name": "NETWORK_IS_PLAYER_ANIMATION_DRAWING_SYNCHRONIZED",
-            "comment": "hash collision",
+            "name": "_0xC6F8AB8A4189CF3A",
+            "comment": "",
             "jhash": "0x3D6360B5",
             "params": [],
             "return_type": "void",
@@ -54218,7 +54234,8 @@
         },
         "0xC7420099936CE286": {
             "name": "_NETWORK_ACCESS_TUNABLE_BOOL_HASH_FAIL_VAL",
-            "comment": "Returns a default value if the tunable don't exist.\n\nConsole Hash - 0x5B6A607E",
+            "comment": "Returns a default value if the tunable don't exist.",
+            "jhash": "0x5B6A607E",
             "params": [
                 {
                     "type": "Hash",
@@ -54488,8 +54505,8 @@
             "return_size": 1
         },
         "0xE26CCFF8094D8C74": {
-            "name": "USING_NETWORK_WEAPONTYPE",
-            "comment": "hash collision?",
+            "name": "_0xE26CCFF8094D8C74",
+            "comment": "",
             "jhash": "0xF49C1533",
             "params": [
                 {
@@ -57227,8 +57244,9 @@
             "return_size": 0
         },
         "0xFB6DB092FBAE29E6": {
-            "name": "_NETWORK_EARN_FROM_AMBIENT_JOB",
-            "comment": "Console Hash - 0xA14CC95D = NETWORK_EARN_FROM_AMBIENT_JOB\nExample for p1: \"AM_DISTRACT_COPS\"",
+            "name": "NETWORK_EARN_FROM_AMBIENT_JOB",
+            "comment": "Example for p1: \"AM_DISTRACT_COPS\"",
+            "jhash": "0xA14CC95D",
             "params": [
                 {
                     "type": "int",
@@ -57371,8 +57389,9 @@
             "return_size": 0
         },
         "0x6EA318C91C1A8786": {
-            "name": "_NETWORK_EARN_FROM_DAILY_OBJECTIVE",
-            "comment": "Console Hash - 0xAB6BD72F = NETWORK_EARN_FROM_DAILY_OBJECTIVE",
+            "name": "NETWORK_EARN_FROM_DAILY_OBJECTIVE",
+            "comment": "",
+            "jhash": "0xAB6BD72F",
             "params": [
                 {
                     "type": "int",
@@ -57469,8 +57488,9 @@
             "return_size": 0
         },
         "0x6816FB4416760775": {
-            "name": "_NETWORK_EARN_FROM_JOB_BONUS",
-            "comment": "Console Hash - 0xBEE23713 = NETWORK_EARN_FROM_JOB_BONUS",
+            "name": "NETWORK_EARN_FROM_JOB_BONUS",
+            "comment": "",
+            "jhash": "0xBEE23713",
             "params": [
                 {
                     "type": "Any",
@@ -57754,7 +57774,8 @@
         },
         "0x7C4FCCD2E4DEB394": {
             "name": "_0x7C4FCCD2E4DEB394",
-            "comment": "Used for cash gifts\nConsole Hash - 0x468CC978",
+            "comment": "",
+            "jhash": "0x468CC978",
             "params": [],
             "return_type": "bool",
             "param_count": 0,
@@ -59322,8 +59343,9 @@
             "return_size": 0
         },
         "0x9D26502BB97BFE62": {
-            "name": "_NETWORK_SPENT_REQUEST_HEIST",
-            "comment": "Console Hash 0xF4287778 = NETWORK_SPENT_REQUEST_HEIST",
+            "name": "NETWORK_SPENT_REQUEST_HEIST",
+            "comment": "",
+            "jhash": "0xF4287778",
             "params": [
                 {
                     "type": "Any",
@@ -68098,8 +68120,8 @@
             "return_size": 1
         },
         "0xF92691AED837A5FC": {
-            "name": "SET_EXCLUSIVE_PHONE_RELATIONSHIPS",
-            "comment": "In appcamera.c4, Line 106:\nif (VEHICLE::IS_VEHICLE_DRIVEABLE(PED::SET_EXCLUSIVE_PHONE_RELATIONSHIPS(PLAYER::PLAYER_PED_ID()), 0))\nSo return type could be a vehicle?\n\n!Hash collision - gets the vehicle handle from ped which is about entering the vehicle!\n\nsfink: agreed, 100%\nProper name is GET_VEHICLE_PED_IS_ENTERING",
+            "name": "GET_VEHICLE_PED_IS_ENTERING",
+            "comment": "In appcamera.c4, Line 106:\nif (VEHICLE::IS_VEHICLE_DRIVEABLE(PED::SET_EXCLUSIVE_PHONE_RELATIONSHIPS(PLAYER::PLAYER_PED_ID()), 0))\nSo return type could be a vehicle?",
             "jhash": "0x56E0C163",
             "params": [
                 {
@@ -70554,8 +70576,8 @@
             "return_size": 0
         },
         "0x2BC338A7B21F4608": {
-            "name": "GET_PED_FLOOD_INVINCIBILITY",
-            "comment": "hash collision???",
+            "name": "_0x2BC338A7B21F4608",
+            "comment": "",
             "jhash": "0x31C31DAA",
             "params": [
                 {
@@ -75536,8 +75558,8 @@
             "return_size": 0
         },
         "0xFD325494792302D7": {
-            "name": "SET_TIME_EXCLUSIVE_DISPLAY_TEXTURE",
-            "comment": "Hash collision. Please change back to _0x_",
+            "name": "_0xFD325494792302D7",
+            "comment": "",
             "jhash": "0x7F67671D",
             "params": [
                 {
@@ -87401,8 +87423,8 @@
             "return_size": 1
         },
         "0x08C2D6C52A3104BB": {
-            "name": "SET_PLAYER_INVERTED_UP",
-            "comment": "Hash collision",
+            "name": "_0x08C2D6C52A3104BB",
+            "comment": "",
             "jhash": "0x569847E3",
             "params": [],
             "return_type": "int",
@@ -87771,8 +87793,8 @@
             "return_size": 1
         },
         "0x5B74EA8CFD5E3E7E": {
-            "name": "DESTROY_PLAYER_IN_PAUSE_MENU",
-            "comment": "Hash collision",
+            "name": "_0x5B74EA8CFD5E3E7E",
+            "comment": "",
             "jhash": "0x90F64284",
             "params": [],
             "return_type": "Any",
@@ -91179,12 +91201,12 @@
             "return_size": 1
         },
         "0x9078C0C5EF8C19E9": {
-            "name": "_0x9078C0C5EF8C19E9",
+            "name": "_HAS_VEHICLE_JUMPING_ABILITY",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 }
             ],
             "return_type": "Any",
@@ -91309,16 +91331,16 @@
             "return_size": 1
         },
         "0xC0572928C0ABFDA3": {
-            "name": "_0xC0572928C0ABFDA3",
+            "name": "_GET_ENTRY_POSITION_OF_DOOR",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "int",
+                    "name": "doorIndex"
                 }
             ],
             "return_type": "Vector3",
@@ -91354,12 +91376,12 @@
             "return_size": 1
         },
         "0xDCA174A42133F08C": {
-            "name": "_0xDCA174A42133F08C",
+            "name": "_GET_HAS_LOWERABLE_WHEELS",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 }
             ],
             "return_type": "Any",
@@ -91367,12 +91389,12 @@
             "return_size": 1
         },
         "0x36D782F68B309BDA": {
-            "name": "_0x36D782F68B309BDA",
+            "name": "_HAS_VEHICLE_ROCKET_BOOST",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 }
             ],
             "return_type": "Any",
@@ -91452,16 +91474,16 @@
             "return_size": 1
         },
         "0x645F4B6E8499F632": {
-            "name": "_0x645F4B6E8499F632",
+            "name": "_DOES_VEHICLE_HAVE_DOOR",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "int",
+                    "name": "doorIndex"
                 }
             ],
             "return_type": "Any",
@@ -91665,12 +91687,12 @@
             "return_size": 1
         },
         "0x92922A607497B14D": {
-            "name": "_0x92922A607497B14D",
+            "name": "_GET_NUMBER_OF_VEHICLE_DOORS",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 }
             ],
             "return_type": "Any",
@@ -92095,12 +92117,12 @@
             "return_size": 1
         },
         "0xA916396DF4154EE3": {
-            "name": "_0xA916396DF4154EE3",
+            "name": "_CAN_VEHICLE_PARACHUTE_BE_ACTIVATED",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 }
             ],
             "return_type": "Any",
@@ -92516,16 +92538,16 @@
             "return_size": 0
         },
         "0x7D1464D472D32136": {
-            "name": "_0x7D1464D472D32136",
+            "name": "_GET_VEHICLE_INTERIOR_COLOUR",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "int*",
+                    "name": "color"
                 }
             ],
             "return_type": "void",
@@ -92533,16 +92555,16 @@
             "return_size": 0
         },
         "0xB7635E80A5C31BFF": {
-            "name": "_0xB7635E80A5C31BFF",
+            "name": "_GET_VEHICLE_DASHBOARD_COLOUR",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "int*",
+                    "name": "color"
                 }
             ],
             "return_type": "void",
@@ -92563,12 +92585,12 @@
             "return_size": 1
         },
         "0xBC9CFF381338CB4F": {
-            "name": "_0xBC9CFF381338CB4F",
+            "name": "_HAS_VEHICLE_PARACHUTE",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 }
             ],
             "return_type": "Any",
@@ -93647,8 +93669,8 @@
             "return_size": 1
         },
         "0x57715966069157AD": {
-            "name": "SET_PED_ENABLED_BIKE_RINGTONE",
-            "comment": "This is a hash collision...\n\n_IS_VEHICLE_NEAR_ENTITY",
+            "name": "n_IS_VEHICLE_NEAR_ENTITY",
+            "comment": "",
             "jhash": "0x7FB25568",
             "params": [
                 {
@@ -93816,12 +93838,12 @@
             "return_size": 1
         },
         "0x3D34E80EED4AE3BE": {
-            "name": "_0x3D34E80EED4AE3BE",
+            "name": "_IS_VEHICLE_ROCKET_BOOST_ACTIVE",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 }
             ],
             "return_type": "Any",
@@ -93861,12 +93883,12 @@
             "return_size": 1
         },
         "0x633F6F44A537EBB6": {
-            "name": "_0x633F6F44A537EBB6",
+            "name": "_IS_THIS_MODEL_AN_AMPHIBIOUS_CAR",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Hash",
+                    "name": "model"
                 }
             ],
             "return_type": "Any",
@@ -95554,8 +95576,9 @@
             "return_size": 0
         },
         "0x9A665550F8DA349B": {
-            "name": "_SET_CARGOBOB_PICKUP_MAGNET_ACTIVE",
-            "comment": "Console Hash: 0xF57066DA\nWon't attract or magnetize to any helicopters or planes of course, but that's common sense. ",
+            "name": "SET_CARGOBOB_PICKUP_MAGNET_ACTIVE",
+            "comment": "Won't attract or magnetize to any helicopters or planes of course, but that's common sense. ",
+            "jhash": "0xF57066DA",
             "params": [
                 {
                     "type": "Vehicle",
@@ -96362,8 +96385,8 @@
             "return_size": 0
         },
         "0x3EC8BF18AA453FE9": {
-            "name": "WAS_COUNTER_ACTIVATED",
-            "comment": "Hash collision",
+            "name": "_0x3EC8BF18AA453FE9",
+            "comment": "",
             "jhash": "0x2916D69B",
             "params": [
                 {
@@ -96949,16 +96972,16 @@
             "return_size": 0
         },
         "0x81E1552E35DC3839": {
-            "name": "_0x81E1552E35DC3839",
+            "name": "_SET_VEHICLE_ROCKET_BOOST_ACTIVE",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "bool",
+                    "name": "active"
                 }
             ],
             "return_type": "void",
@@ -97000,16 +97023,16 @@
             "return_size": 0
         },
         "0xE00F2AB100B76E89": {
-            "name": "_0xE00F2AB100B76E89",
+            "name": "_SET_VEHICLE_ROCKET_BOOST_REFILL_TIME",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "float",
+                    "name": "time"
                 }
             ],
             "return_type": "void",
@@ -98612,16 +98635,16 @@
             "return_size": 0
         },
         "0xF40DD601A65F7F19": {
-            "name": "_0xF40DD601A65F7F19",
+            "name": "_SET_VEHICLE_INTERIOR_COLOUR",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "int",
+                    "name": "color"
                 }
             ],
             "return_type": "void",
@@ -98629,16 +98652,16 @@
             "return_size": 0
         },
         "0x6089CDF6A57F326C": {
-            "name": "_0x6089CDF6A57F326C",
+            "name": "_SET_VEHICLE_DASHBOARD_COLOUR",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "int",
+                    "name": "color"
                 }
             ],
             "return_type": "void",
@@ -98900,8 +98923,8 @@
             "return_size": 0
         },
         "0xD8050E0EB60CF274": {
-            "name": "DISABLE_VEHICLE_IMPACT_EXPLOSION_ACTIVATION",
-            "comment": "if set to true, prevents vehicle sirens from having sound, leaving only the lights.\n\nHASH COLLISION !!! Please change to _SET_VEHICLE_SIREN_SOUND",
+            "name": "_SET_VEHICLE_SIREN_SOUND",
+            "comment": "if set to true, prevents vehicle sirens from having sound, leaving only the lights.",
             "jhash": "0xC54156A9",
             "params": [
                 {
@@ -99122,8 +99145,8 @@
             "return_size": 0
         },
         "0x07116E24E9D1929D": {
-            "name": "STEER_UNLOCK_BIAS",
-            "comment": "This seems like a hash collision?\n\np1 (toggle) was always 1 (true) except in one case in the b678 scripts.",
+            "name": "_0x07116E24E9D1929D",
+            "comment": "p1 (toggle) was always 1 (true) except in one case in the b678 scripts.",
             "jhash": "0xA59E3DCD",
             "params": [
                 {
@@ -100273,8 +100296,8 @@
             "return_size": 0
         },
         "0xE023E8AC4EF7C117": {
-            "name": "SET_ALL_VEHICLES_SPAWN",
-            "comment": "Most likely a hash collision",
+            "name": "_0xE023E8AC4EF7C117",
+            "comment": "",
             "jhash": "0xA0909ADB",
             "params": [
                 {
@@ -100515,12 +100538,12 @@
             "return_size": 0
         },
         "0xF660602546D27BA8": {
-            "name": "_0xF660602546D27BA8",
+            "name": "_RAISE_LOWERABLE_WHEELS",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 }
             ],
             "return_type": "void",
@@ -100929,16 +100952,16 @@
             "return_size": 0
         },
         "0x4D610C6B56031351": {
-            "name": "_0x4D610C6B56031351",
-            "comment": "",
+            "name": "_VEHICLE_SET_CUSTOM_PARACHUTE_MODEL",
+            "comment": "parachuteModel = 230075693",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "Hash",
+                    "name": "parachuteModel"
                 }
             ],
             "return_type": "void",
@@ -100946,16 +100969,16 @@
             "return_size": 0
         },
         "0xA74AD2439468C883": {
-            "name": "_0xA74AD2439468C883",
-            "comment": "",
+            "name": "_VEHICLE_SET_CUSTOM_PARACHUTE_TEXTURE",
+            "comment": "colorIndex = 0 - 7",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "int",
+                    "name": "colorIndex"
                 }
             ],
             "return_type": "void",
@@ -100963,16 +100986,16 @@
             "return_size": 0
         },
         "0x28D034A93FE31BF5": {
-            "name": "_0x28D034A93FE31BF5",
+            "name": "_SET_RAMP_VEHICLE_RECEIVES_RAMP_DAMAGE",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "bool",
+                    "name": "receivesDamage"
                 }
             ],
             "return_type": "void",
@@ -100980,16 +101003,16 @@
             "return_size": 0
         },
         "0x0BFFB028B3DD0A97": {
-            "name": "_0x0BFFB028B3DD0A97",
+            "name": "_SET_VEHICLE_PARACHUTE_ACTIVE",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "bool",
+                    "name": "active"
                 }
             ],
             "return_type": "void",
@@ -102584,8 +102607,8 @@
             "return_size": 1
         },
         "0x4B7620C47217126C": {
-            "name": "SET_WEAPON_SMOKEGRENADE_ASSIGNED",
-            "comment": "Hash collision real name is: IS_FLASH_LIGHT_ON",
+            "name": "IS_FLASH_LIGHT_ON",
+            "comment": "",
             "jhash": "0x76876154",
             "params": [
                 {
