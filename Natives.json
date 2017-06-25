@@ -17208,7 +17208,7 @@
             "jhash": "0x0B4087F7",
             "params": [
                 {
-                    "type": "BOOL*",
+                    "type": "bool*",
                     "name": "p0"
                 }
             ],
@@ -61127,7 +61127,7 @@
                     "name": "z"
                 },
                 {
-                    "type": "BOOL*",
+                    "type": "bool*",
                     "name": "locked"
                 },
                 {
@@ -81435,7 +81435,7 @@
                     "name": "rayHandle"
                 },
                 {
-                    "type": "BOOL*",
+                    "type": "bool*",
                     "name": "hit"
                 },
                 {
@@ -81465,7 +81465,7 @@
                     "name": "rayHandle"
                 },
                 {
-                    "type": "BOOL*",
+                    "type": "bool*",
                     "name": "hit"
                 },
                 {
@@ -86136,7 +86136,7 @@
                     "name": "statHash"
                 },
                 {
-                    "type": "BOOL*",
+                    "type": "bool*",
                     "name": "outValue"
                 },
                 {
@@ -92728,11 +92728,11 @@
                     "name": "vehicle"
                 },
                 {
-                    "type": "BOOL*",
+                    "type": "bool*",
                     "name": "lightsOn"
                 },
                 {
-                    "type": "BOOL*",
+                    "type": "bool*",
                     "name": "highbeamsOn"
                 }
             ],
