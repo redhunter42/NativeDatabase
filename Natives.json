@@ -96989,16 +96989,16 @@
             "return_size": 0
         },
         "0xFEB2DDED3509562E": {
-            "name": "_0xFEB2DDED3509562E",
+            "name": "_SET_VEHICLE_ROCKET_BOOST_PERCENTAGE",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Vehicle",
+                    "name": "vehicle"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "float",
+                    "name": "percentage"
                 }
             ],
             "return_type": "void",
