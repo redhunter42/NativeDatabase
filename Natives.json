@@ -93669,7 +93669,7 @@
             "return_size": 1
         },
         "0x57715966069157AD": {
-            "name": "n_IS_VEHICLE_NEAR_ENTITY",
+            "name": "_IS_VEHICLE_NEAR_ENTITY",
             "comment": "",
             "jhash": "0x7FB25568",
             "params": [
