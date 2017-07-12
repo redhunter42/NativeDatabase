@@ -346,18 +346,18 @@
             "param_count": 3,
             "return_size": 0
         },
-        "0x845FFC3A4FEEFA3E": {
-            "name": "AUDIO_IS_SCRIPTED_MUSIC_PLAYING",
+        "0x3D120012440E6683": {
+            "name": "_0x3D120012440E6683",
             "comment": "",
-            "jhash": "0x86E995D1",
             "params": [],
             "return_type": "Any",
             "param_count": 0,
             "return_size": 1
         },
-        "0x2DD39BF3E2F9C47F": {
-            "name": "_0x2DD39BF3E2F9C47F",
+        "0x845FFC3A4FEEFA3E": {
+            "name": "AUDIO_IS_SCRIPTED_MUSIC_PLAYING",
             "comment": "",
+            "jhash": "0x86E995D1",
             "params": [],
             "return_type": "Any",
             "param_count": 0,
@@ -3634,9 +3634,7 @@
                     "name": "p1"
                 }
             ],
-            "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void"
         },
         "0x3B988190C0AA6C0B": {
             "name": "SET_VEHICLE_RADIO_ENABLED",
@@ -4368,9 +4366,7 @@
                     "name": "z"
                 }
             ],
-            "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void"
         },
         "0x85F462BADC7DA47F": {
             "name": "ADD_VEHICLE_SUBTASK_ATTACK_PED",
@@ -10431,7 +10427,7 @@
         "0xFC545A9F0626E3B6": {
             "name": "TASK_VEHICLE_FOLLOW",
             "comment": "Makes a ped in a vehicle follow an entity (ped, vehicle, etc.)\n\ndrivingStyle:\n0 = Rushed\n1 = Ignore Traffic Lights\n2 = Fast\n3 = Normal (Stop in Traffic)\n4 = Fast avoid traffic\n5 = Fast, stops in traffic but overtakes sometimes\n6 = Fast avoids traffic extremely\n\nAI::_TASK_VEHICLE_FOLLOW(l_244[3/*1*/], l_268[3/*1*/], l_278, 40.0, 262144, 10);\n\nWhat is this known as in the decompiled scripts ffs. I need more examples. I've searched in all scripts for keywords suchas,\nTASK_VEHICLE_FOLLOW, FC545A9F0626E3B6, 0xFC545A9F0626E3B6, all the parameters in the above example even just search the last few params '40.0, 262144, 10' and couldnt find where this native is used in scripts at all unless whoever decompiled the scripts gave it a whack a.. name.",
-                "jhash": "0xA8B917D7",
+            "jhash": "0xA8B917D7",
             "params": [
                 {
                     "type": "Ped",
@@ -11182,9 +11178,7 @@
                     "name": "p0"
                 }
             ],
-            "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void"
         },
         "0x5CEB25A7D2848963": {
             "name": "VEHICLE_WAYPOINT_PLAYBACK_USE_DEFAULT_SPEED",
@@ -14821,9 +14815,7 @@
                     "name": "p7"
                 }
             ],
-            "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void"
         },
         "0x2B486269ACD548D3": {
             "name": "SET_GAMEPLAY_PED_HINT",
@@ -27246,16 +27238,17 @@
             "param_count": 0,
             "return_size": 0
         },
-        "0x67D02A194A2FC2BD": {
-            "name": "_0x67D02A194A2FC2BD",
-            "comment": "",
+        "0x11FE353CF9733E6F": {
+            "name": "REQUEST_SCALEFORM_MOVIE",
+            "comment": "Gets a new native after almost every update.\n\nUpdate 1.0.393.2\n0x67D02A194A2FC2BD\n\nUpdate 1.0.463.1\n0xC97D787CE7726A2F\n\nUpdate 1.0.505.2\n0x36ECDA4DD9A3F08D\n\nUpdate 1.0.573.1\n0xE3C796DC28BC3254\n\nUpdate 1.0.678.1\n0x2F14983962462691\n",
+            "jhash": "0xC67E3DCB",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "const char*",
+                    "name": "scaleformName"
                 }
             ],
-            "return_type": "Any",
+            "return_type": "int",
             "param_count": 1,
             "return_size": 1
         },
@@ -27286,17 +27279,16 @@
             "param_count": 1,
             "return_size": 1
         },
-        "0x11FE353CF9733E6F": {
-            "name": "REQUEST_SCALEFORM_MOVIE",
-            "comment": "Gets a new native after almost every update.\n\nUpdate 1.0.393.2\n0x67D02A194A2FC2BD\n\nUpdate 1.0.463.1\n0xC97D787CE7726A2F\n\nUpdate 1.0.505.2\n0x36ECDA4DD9A3F08D\n\nUpdate 1.0.573.1\n0xE3C796DC28BC3254\n\nUpdate 1.0.678.1\n0x2F14983962462691\n",
-            "jhash": "0xC67E3DCB",
+        "0x65E7E78842E74CDB": {
+            "name": "_0x65E7E78842E74CDB",
+            "comment": "",
             "params": [
                 {
-                    "type": "const char*",
-                    "name": "scaleformName"
+                    "type": "Any",
+                    "name": "p0"
                 }
             ],
-            "return_type": "int",
+            "return_type": "Any",
             "param_count": 1,
             "return_size": 1
         },
@@ -30143,8 +30135,8 @@
             "param_count": 1,
             "return_size": 0
         },
-        "0x96EE70DD1AB30DAB": {
-            "name": "_0x96EE70DD1AB30DAB",
+        "0x7FDFADE676AA3CB0": {
+            "name": "_0x7FDFADE676AA3CB0",
             "comment": "",
             "params": [
                 {
@@ -44912,16 +44904,16 @@
             "param_count": 2,
             "return_size": 1
         },
-        "0xFA336E7F40C0A0D0": {
-            "name": "_0xFA336E7F40C0A0D0",
+        "0xA65568121DF2EA26": {
+            "name": "_NETWORK_SHOP_BASKET_END",
             "comment": "",
             "params": [],
             "return_type": "Any",
             "param_count": 0,
             "return_size": 1
         },
-        "0xA65568121DF2EA26": {
-            "name": "_NETWORK_SHOP_BASKET_END",
+        "0xE547E9114277098F": {
+            "name": "_0xE547E9114277098F",
             "comment": "",
             "params": [],
             "return_type": "Any",
@@ -48882,25 +48874,19 @@
             "name": "_0xD414BE129BB81B32",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x0E3A041ED6AC2B45": {
             "name": "_0x0E3A041ED6AC2B45",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x350C23949E43686C": {
             "name": "_0x350C23949E43686C",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x7DB53B37A2F211A0": {
             "name": "_0x7DB53B37A2F211A0",
@@ -49154,9 +49140,7 @@
             "name": "_0x52C1EADAF7B10302",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x1D6A14F1F9A736FC": {
             "name": "NETWORK_GET_HOST_OF_SCRIPT",
@@ -49418,9 +49402,7 @@
             "name": "_0xFF8FCF9FFC458A1C",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x1B84DF6AF2A46938": {
             "name": "NETWORK_GET_PARTICIPANT_INDEX",
@@ -49550,9 +49532,7 @@
             "name": "_0xAA5FAFCD2C5F5E47",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x24409FC4C55CB22D": {
             "name": "_0x24409FC4C55CB22D",
@@ -49923,9 +49903,7 @@
             "name": "_0x3765C3A3E8192E10",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xD45CB817D7E177D2": {
             "name": "NETWORK_HANDLE_FROM_FRIEND",
@@ -50724,9 +50702,7 @@
             "name": "_0x16D3D49902F697BB",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xC01E93FAC20C3346": {
             "name": "_NETWORK_HAS_CONTROL_OF_PAVEMENT_STATS",
@@ -52134,9 +52110,7 @@
             "name": "_0x5626D9D6810730D5",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x924426BFFD82E915": {
             "name": "NETWORK_REQUEST_CLOUD_BACKGROUND_SCRIPTS",
@@ -54531,9 +54505,7 @@
             "name": "_0x472841A026D26D8B",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x715135F4B82AC90D": {
             "name": "_0x715135F4B82AC90D",
@@ -55214,9 +55186,7 @@
             "name": "_0xF287F506767CC8A9",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x46FB3ED415C7641C": {
             "name": "_0x46FB3ED415C7641C",
@@ -55244,9 +55214,7 @@
             "name": "_0xA12D3A5A3753CC23",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xE9B99B6853181409": {
             "name": "_0xE9B99B6853181409",
@@ -56688,25 +56656,19 @@
             "name": "_0xAEDF1BC1C133D6E3",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x2555CF7DA5473794": {
             "name": "_0x2555CF7DA5473794",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x6FD992C4A1C1B986": {
             "name": "_0x6FD992C4A1C1B986",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         }
     },
     "NETWORKCASH": {
@@ -56714,9 +56676,7 @@
             "name": "_0x9777734DAD16992F",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xE260E0BB9CD995AC": {
             "name": "_0xE260E0BB9CD995AC",
@@ -56764,9 +56724,7 @@
             "name": "_0x9B5016A6433A68C5",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x763B4BD305338F19": {
             "name": "NETWORK_BUY_AIRSTRIKE",
@@ -56794,9 +56752,7 @@
             "name": "_0xA3EDDAA42411D3B9",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x7B718E197453F2D9": {
             "name": "NETWORK_BUY_BOUNTY",
@@ -56977,9 +56933,7 @@
             "name": "_0xD987F2489969668C",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x650A08A280870AF6": {
             "name": "NETWORK_BUY_PROPERTY",
@@ -57011,9 +56965,7 @@
             "name": "_0x75AF80E61248EEBD",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x3A54E33660DED67F": {
             "name": "NETWORK_CAN_BET",
@@ -57033,9 +56985,7 @@
             "name": "_0xC62DD18375C99130",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x5D17BE59D2123284": {
             "name": "NETWORK_CAN_RECEIVE_PLAYER_CASH",
@@ -57059,9 +57009,7 @@
                     "name": "p3"
                 }
             ],
-            "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "return_type": "bool"
         },
         "0x1C2473301B1C66BA": {
             "name": "_0x1C2473301B1C66BA",
@@ -57153,9 +57101,7 @@
             "name": "_0x18B7AE224B087E26",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x05A50AF38947EB8D": {
             "name": "NETWORK_DELETE_CHARACTER",
@@ -57331,9 +57277,7 @@
             "name": "_0x8586789730B10CAF",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x2B171E6B2F64D8DF": {
             "name": "NETWORK_EARN_FROM_CHALLENGE_WIN",
@@ -57730,9 +57674,7 @@
             "name": "_0x3E4ADAFF1830F146",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xCDA1C62BE2777802": {
             "name": "_0xCDA1C62BE2777802",
@@ -57785,9 +57727,7 @@
             "name": "_0xA31FD6A0865B6D14",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xDC18531D7019A535": {
             "name": "_0xDC18531D7019A535",
@@ -57810,17 +57750,13 @@
             "name": "_0xED5AB8860415BABA",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x08E8EEADFD0DC4A0": {
             "name": "_0x08E8EEADFD0DC4A0",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x5D1E75F91C07DEE5": {
             "name": "_0x5D1E75F91C07DEE5",
@@ -57834,33 +57770,25 @@
             "name": "_0xFB2456B2040A6A67",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x4F54F3B6C202FB4E": {
             "name": "_0x4F54F3B6C202FB4E",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x13A8DE2FD77D04F3": {
             "name": "_0x13A8DE2FD77D04F3",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xEA560AC9EEB1E19B": {
             "name": "_0xEA560AC9EEB1E19B",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xA6FA3979BED01B81": {
             "name": "_NETWORK_GET_BANK_BALANCE_STRING",
@@ -57874,17 +57802,13 @@
             "name": "_0x700AF71AE615E6DD",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xF9B10B529DCFB33B": {
             "name": "_0xF9B10B529DCFB33B",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x5CBAD97E059E1B94": {
             "name": "NETWORK_GET_VC_BALANCE",
@@ -58214,9 +58138,7 @@
             "name": "_0xCA230C9682556CF1",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x1C436FD11FFA692F": {
             "name": "NETWORK_SPENT_BETTING",
@@ -58274,9 +58196,7 @@
             "name": "_0xFFBE02CD385356BD",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x29B260B84947DFCC": {
             "name": "NETWORK_SPENT_BOUNTY",
@@ -58628,9 +58548,7 @@
                     "name": "p2"
                 }
             ],
-            "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void"
         },
         "0x7BF1D73DB2ECA492": {
             "name": "NETWORK_SPENT_HELI_PICKUP",
@@ -58771,9 +58689,7 @@
             "name": "_0x28F174A67B8D0C2F",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x5BCDE0F640C773D2": {
             "name": "_0x5BCDE0F640C773D2",
@@ -59145,9 +59061,7 @@
                     "name": "p3"
                 }
             ],
-            "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void"
         },
         "0xB21B89501CFAC79E": {
             "name": "NETWORK_SPENT_PROSTITUTES",
@@ -59812,9 +59726,7 @@
             "name": "_0xCD0F5B5D932AE473",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         }
     },
     "OBJECT": {
@@ -62266,8 +62178,8 @@
             "param_count": 2,
             "return_size": 0
         },
-        "0x8CFF648FBD7330F1": {
-            "name": "_0x8CFF648FBD7330F1",
+        "0x8881C98A31117998": {
+            "name": "_0x8881C98A31117998",
             "comment": "",
             "params": [
                 {
@@ -62318,8 +62230,8 @@
             "param_count": 3,
             "return_size": 0
         },
-        "0x8881C98A31117998": {
-            "name": "_0x8881C98A31117998",
+        "0xA90E7227A9303FA9": {
+            "name": "_0xA90E7227A9303FA9",
             "comment": "",
             "params": [
                 {
@@ -62341,12 +62253,12 @@
             "jhash": "0xAB11267D",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Pickup",
+                    "name": "pickup"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "int",
+                    "name": "time"
                 }
             ],
             "return_type": "void",
@@ -68478,9 +68390,7 @@
                     "name": "ped"
                 }
             ],
-            "return_type": "bool",
-            "param_count": null,
-            "return_size": null
+            "return_type": "bool"
         },
         "0x16EC4839969F9F5E": {
             "name": "IS_COP_PED_IN_AREA_3D",
@@ -74265,9 +74175,7 @@
                     "name": "toggle"
                 }
             ],
-            "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void"
         },
         "0xC8A9481A01E63C28": {
             "name": "SET_PED_RANDOM_COMPONENT_VARIATION",
@@ -80967,73 +80875,55 @@
             "name": "_0x0F6F1EBBC4E1D5E6",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xDC2BACD920D0A0DD": {
             "name": "_0xDC2BACD920D0A0DD",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x107E5CC7CA942BC1": {
             "name": "_0x107E5CC7CA942BC1",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x22E21FBCFC88C149": {
             "name": "_0x22E21FBCFC88C149",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x829CD22E043A2577": {
             "name": "_0x829CD22E043A2577",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x836B62713E0534CA": {
             "name": "_0x836B62713E0534CA",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x760910B49D2B98EA": {
             "name": "_0x760910B49D2B98EA",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x9D5A25BADB742ACD": {
             "name": "_0x9D5A25BADB742ACD",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x75B18E49607874C7": {
             "name": "_0x75B18E49607874C7",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xB1577667C3708F9B": {
             "name": "_0xB1577667C3708F9B",
@@ -81303,20 +81193,20 @@
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
+                    "type": "bool",
                     "name": "p0"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "void*",
+                    "name": "args"
                 },
                 {
-                    "type": "Any",
-                    "name": "p2"
+                    "type": "int",
+                    "name": "argCount"
                 },
                 {
-                    "type": "Any",
-                    "name": "p3"
+                    "type": "int",
+                    "name": "bit"
                 }
             ],
             "return_type": "void",
@@ -81407,7 +81297,7 @@
                     "name": "p0"
                 },
                 {
-                    "type": "const char*",
+                    "type": "void*",
                     "name": "args"
                 },
                 {
@@ -81419,9 +81309,7 @@
                     "name": "bit"
                 }
             ],
-            "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void"
         }
     },
     "SHAPETEST": {
@@ -81871,9 +81759,7 @@
             "name": "_0xC2C97EA97711D1AE",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x19853B5B17D77BCA": {
             "name": "_0x19853B5B17D77BCA",
@@ -81897,17 +81783,13 @@
             "name": "_0x33DF47CC0642061B",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x4ED9C8D6DA297639": {
             "name": "_0x4ED9C8D6DA297639",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x4A7D6E727F941747": {
             "name": "_0x4A7D6E727F941747",
@@ -81927,33 +81809,25 @@
             "name": "_0x50A8A36201DBF83E",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xC5A35C73B68F3C49": {
             "name": "_0xC5A35C73B68F3C49",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x2570E26BE63964E3": {
             "name": "_0x2570E26BE63964E3",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x710BCDA8071EDED1": {
             "name": "_0x710BCDA8071EDED1",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x8CC469AB4D349B7C": {
             "name": "_0x8CC469AB4D349B7C",
@@ -81981,17 +81855,13 @@
             "name": "_0xE75A4A2E5E316D86",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x9DE5D2F723575ED0": {
             "name": "_0x9DE5D2F723575ED0",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x699E4A5C8C893A18": {
             "name": "_0x699E4A5C8C893A18",
@@ -82019,9 +81889,7 @@
             "name": "_0x1D12A56FC95BE92E",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xFF8F3A92B75ED67A": {
             "name": "_0xFF8F3A92B75ED67A",
@@ -82036,17 +81904,13 @@
             "name": "_0xA468E0BE12B12C70",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x450819D8CF90C416": {
             "name": "_0x450819D8CF90C416",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x44ACA259D67651DB": {
             "name": "_0x44ACA259D67651DB",
@@ -82169,9 +82033,7 @@
             "name": "_0x2D874D4AE612A65F",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x8416FE4E4629D7D7": {
             "name": "_0x8416FE4E4629D7D7",
@@ -82191,25 +82053,19 @@
             "name": "_0xA770C8EEC6FB2AC5",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xC85A7127E7AD02AA": {
             "name": "_0xC85A7127E7AD02AA",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x7FFCBFEE44ECFABF": {
             "name": "_0x7FFCBFEE44ECFABF",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0xDF649C4E9AFDD788": {
             "name": "_0xDF649C4E9AFDD788",
@@ -82668,9 +82524,7 @@
             "name": "_0xC4C4575F62534A24",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x1F1E9682483697C7": {
             "name": "_0x1F1E9682483697C7",
@@ -87401,8 +87255,8 @@
             "jhash": "0xC2EE9A02",
             "params": [],
             "return_type": "int",
-            "param_count": null,
-            "return_size": null
+            "param_count": 0,
+            "return_size": 1
         },
         "0x20F898A5D9782800": {
             "name": "GET_PLAYER_SHORT_SWITCH_STATE",
@@ -90178,6 +90032,19 @@
             "param_count": 4,
             "return_size": 0
         },
+        "0x2467A2D807D37CA3": {
+            "name": "_0x2467A2D807D37CA3",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "param_count": 1,
+            "return_size": 1
+        },
         "0x26C10ECBDA5D043B": {
             "name": "_GET_BOAT_ANCHOR",
             "comment": "Console Hash: 0xE97A4F5E",
@@ -90188,19 +90055,6 @@
                 }
             ],
             "return_type": "bool",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0x24F4121D07579880": {
-            "name": "_0x24F4121D07579880",
-            "comment": "",
-            "params": [
-                {
-                    "type": "Any",
-                    "name": "p0"
-                }
-            ],
-            "return_type": "Any",
             "param_count": 1,
             "return_size": 1
         },
@@ -90719,9 +90573,7 @@
                     "name": "p1"
                 }
             ],
-            "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void"
         },
         "0x23428FC53C60919C": {
             "name": "DISABLE_PLANE_AILERON",
@@ -97223,9 +97075,7 @@
             "name": "_0x878C75C09FBDB942",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x95CF53B3D687F9FA": {
             "name": "_0x95CF53B3D687F9FA",
@@ -99935,9 +99785,7 @@
             "name": "_0xDCE97BDF8A0EABC8",
             "comment": "",
             "params": [],
-            "return_type": "Any",
-            "param_count": null,
-            "return_size": null
+            "return_type": "Any"
         },
         "0x6EBFB22D646FFC18": {
             "name": "_0x6EBFB22D646FFC18",
@@ -103225,9 +103073,7 @@
                     "name": "p2"
                 }
             ],
-            "return_type": "void",
-            "param_count": null,
-            "return_size": null
+            "return_type": "void"
         },
         "0x3EDCB0505123623B": {
             "name": "SET_PED_INFINITE_AMMO",
