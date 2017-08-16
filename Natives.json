@@ -18552,8 +18552,9 @@
             "return_size": 1
         },
         "0xCCF1E97BEFDAE480": {
-            "name": "_GET_ENTITY_COLLISON_DISABLED",
-            "comment": "console hash: 0xE8C0C629",
+            "name": "GET_ENTITY_COLLISION_DISABLED",
+            "comment": "",
+            "jhash": "0xE8C0C629",
             "params": [
                 {
                     "type": "Entity",
@@ -87506,15 +87507,15 @@
             "return_size": 1
         },
         "0x75816577FEA6DAD5": {
-            "name": "_0x75816577FEA6DAD5",
+            "name": "_IS_MODEL_A_PED",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Hash",
+                    "name": "modelHash"
                 }
             ],
-            "return_type": "Any",
+            "return_type": "bool",
             "param_count": 1,
             "return_size": 1
         },
@@ -90986,15 +90987,15 @@
             "return_size": 1
         },
         "0x9B8E1BF04B51F2E8": {
-            "name": "_0x9B8E1BF04B51F2E8",
+            "name": "_GET_ALL_VEHICLES",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Any*",
+                    "name": "vehArray"
                 }
             ],
-            "return_type": "Any",
+            "return_type": "int",
             "param_count": 1,
             "return_size": 1
         },
@@ -101796,19 +101797,19 @@
             "return_size": 1
         },
         "0xF489B44DD5AF4BD9": {
-            "name": "_0xF489B44DD5AF4BD9",
+            "name": "_GET_PED_AMMO_TYPE_FROM_WEAPON_2",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "Ped",
+                    "name": "ped"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "Hash",
+                    "name": "weaponHash"
                 }
             ],
-            "return_type": "Any",
+            "return_type": "Hash",
             "param_count": 2,
             "return_size": 1
         },
