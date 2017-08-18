@@ -44,6 +44,8 @@ def save_natives_json(natives_json, file, enum_hashes = False, show_comments = F
                 if 'jhash' in native_info:
                     comment += ' ' + native_info['jhash']
 
+                comment += ' b' + native_info['first_build']
+
                 if show_comments:
                     if native_info['comment']:
                         f.write('\n'.join([ f'{indent}// {line}' for line in native_info['comment'].strip().split('\n') ]) + '\n')
