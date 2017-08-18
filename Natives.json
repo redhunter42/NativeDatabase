@@ -7559,8 +7559,9 @@
             "return_size": 0
         },
         "0x9C00E77AF14B2DFF": {
-            "name": "_TASK_GET_OFF_BOAT",
-            "comment": "Jenkins of this native is 0x4293601F. This is the actual name.",
+            "name": "TASK_GET_OFF_BOAT",
+            "comment": "",
+            "jhash": "0x4293601F",
             "params": [
                 {
                     "type": "Ped",
@@ -85450,8 +85451,9 @@
             "return_size": 1
         },
         "0xF86AA3C56BA31381": {
-            "name": "_DOES_SCRIPT_WITH_NAME_HASH_EXIST",
-            "comment": "formerly _IS_STREAMED_SCRIPT_RUNNING\n\nJenkins hash: 0x19EAE282",
+            "name": "DOES_SCRIPT_WITH_NAME_HASH_EXIST",
+            "comment": "",
+            "jhash": "0x19EAE282",
             "params": [
                 {
                     "type": "Hash",
@@ -92843,8 +92845,9 @@
             "return_size": 0
         },
         "0x5F61EBBE1A00F96D": {
-            "name": "_REMOVE_NAMED_PTFX_ASSET",
-            "comment": "console hash: 0xC44762A1",
+            "name": "REMOVE_NAMED_PTFX_ASSET",
+            "comment": "",
+            "jhash": "0xC44762A1",
             "params": [
                 {
                     "type": "const char*",
@@ -95753,8 +95756,9 @@
             "return_size": 0
         },
         "0x6E08BF5B3722BAC9": {
-            "name": "_DOES_CARGOBOB_HAVE_PICKUP_MAGNET",
-            "comment": "Returns true only when the magnet is active, will return false if the hook is active\nconsole hash 0x4778CA0A - DOES_CARGOBOB_HAVE_PICKUP_MAGNET",
+            "name": "DOES_CARGOBOB_HAVE_PICKUP_MAGNET",
+            "comment": "Returns true only when the magnet is active, will return false if the hook is active",
+            "jhash": "0x4778CA0A",
             "params": [
                 {
                     "type": "Vehicle",
@@ -100967,8 +100971,9 @@
             "return_size": 0
         },
         "0xBCBFCD9D1DAC19E2": {
-            "name": "_SET_CARGOBOB_PICKUP_MAGNET_STRENGTH",
-            "comment": "console hash 0xCC3CF97D - SET_CARGOBOB_PICKUP_MAGNET_STRENGTH",
+            "name": "SET_CARGOBOB_PICKUP_MAGNET_STRENGTH",
+            "comment": "",
+            "jhash": "0xCC3CF97D",
             "params": [
                 {
                     "type": "Vehicle",
