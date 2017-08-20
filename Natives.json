@@ -1132,6 +1132,7 @@
         "0x8A694D7A68F8DC38": {
             "name": "_0x8A694D7A68F8DC38",
             "comment": "One call found in the b617d scripts:\n\nAUDIO::_8A694D7A68F8DC38(NETWORK::NET_TO_PED(l_3989._f26F[0/*1*/]), \"CONV_INTERRUPT_QUIT_IT\", \"LESTER\");",
+            "jhash": "0xDD4A3F1F",
             "params": [
                 {
                     "type": "Ped",
@@ -1399,6 +1400,7 @@
         "0x0626A247D2405330": {
             "name": "_0x0626A247D2405330",
             "comment": "",
+            "jhash": "0x815CAE99",
             "params": [],
             "return_type": "Any",
             "first_build": "323",
@@ -2450,6 +2452,7 @@
         "0x9AC92EED5E4793AB": {
             "name": "_0x9AC92EED5E4793AB",
             "comment": "",
+            "jhash": "0xE67446E9",
             "params": [],
             "return_type": "void",
             "first_build": "323",
@@ -2474,6 +2477,7 @@
         "0xCE4AC0439F607045": {
             "name": "_0xCE4AC0439F607045",
             "comment": "",
+            "jhash": "0x6096504C",
             "params": [],
             "return_type": "void",
             "first_build": "323",
@@ -3264,6 +3268,7 @@
         "0x8BF907833BE275DE": {
             "name": "_0x8BF907833BE275DE",
             "comment": "",
+            "jhash": "0x2CD26D69",
             "params": [
                 {
                     "type": "float",
@@ -11907,8 +11912,9 @@
             "return_size": 0
         },
         "0xE70BA7B90F8390DC": {
-            "name": "_0xE70BA7B90F8390DC",
+            "name": "WAYPOINT_PLAYBACK_START_SHOOTING_AT_PED",
             "comment": "",
+            "jhash": "0xBD5F0EB8",
             "params": [
                 {
                     "type": "Any",
@@ -19598,6 +19604,7 @@
         "0x846BF6291198A71E": {
             "name": "_GET_ENTITY_PHYSICS_HEADING",
             "comment": "Gets the heading of the entity physics in degrees, which tends to be more accurate than just \"GET_ENTITY_HEADING\". This can be clearly seen while, for example, ragdolling a ped/player.\n\nNOTE: The name and description of this native are based on independent research. If you find this native to be more suitable under a different name and/or described differently, please feel free to do so.\n",
+            "jhash": "0x9320E642",
             "params": [
                 {
                     "type": "Entity",
@@ -21533,6 +21540,7 @@
         "0x9EBC85ED0FFFE51C": {
             "name": "_0x9EBC85ED0FFFE51C",
             "comment": "p2 - mainly set as false in scripts",
+            "jhash": "0xBD0D4831",
             "params": [
                 {
                     "type": "Entity",
@@ -21636,7 +21644,8 @@
         },
         "0x621873ECE1178967": {
             "name": "_SET_ENTITY_COORDS_2",
-            "comment": "does the same as SET_ENTITY_COORDS.\n\nConsole Hash: 0x749B282E",
+            "comment": "does the same as SET_ENTITY_COORDS.",
+            "jhash": "0x749B282E",
             "params": [
                 {
                     "type": "Entity",
@@ -22932,6 +22941,7 @@
         "0xE1CA84EBF72E691D": {
             "name": "_0xE1CA84EBF72E691D",
             "comment": "",
+            "jhash": "0x22DAE257",
             "params": [
                 {
                     "type": "Any",
@@ -23081,6 +23091,7 @@
         "0x017568A8182D98A6": {
             "name": "_0x017568A8182D98A6",
             "comment": "",
+            "jhash": "0xC560D7C0",
             "params": [
                 {
                     "type": "Any",
@@ -23223,6 +23234,7 @@
         "0x5D5CAFF661DDF6FC": {
             "name": "_0x5D5CAFF661DDF6FC",
             "comment": "",
+            "jhash": "0xDB0A7A58",
             "params": [
                 {
                     "type": "Any",
@@ -23777,7 +23789,8 @@
         },
         "0x6070104B699B2EF4": {
             "name": "_0x6070104B699B2EF4",
-            "comment": "Console Hash: 0x37C388DB",
+            "comment": "",
+            "jhash": "0x37C388DB",
             "params": [
                 {
                     "type": "Any",
@@ -24044,6 +24057,7 @@
         "0x82ACC484FFA3B05F": {
             "name": "_0x82ACC484FFA3B05F",
             "comment": "",
+            "jhash": "0x0083B69B",
             "params": [
                 {
                     "type": "Any",
@@ -24797,6 +24811,7 @@
         "0xD2936CAB8B58FCBD": {
             "name": "_0xD2936CAB8B58FCBD",
             "comment": "",
+            "jhash": "0x84F05943",
             "params": [
                 {
                     "type": "Any",
@@ -27113,6 +27128,7 @@
         "0x35FB78DC42B7BD21": {
             "name": "_0x35FB78DC42B7BD21",
             "comment": "",
+            "jhash": "0xF3A6309E",
             "params": [],
             "return_type": "Any",
             "first_build": "323",
@@ -27395,6 +27411,7 @@
         "0xEB3DAC2C86001E5E": {
             "name": "_0xEB3DAC2C86001E5E",
             "comment": "",
+            "jhash": "0xD4F5D07D",
             "params": [],
             "return_type": "bool",
             "first_build": "323",
@@ -27831,6 +27848,7 @@
         "0x0C1C5D756FB5F337": {
             "name": "_HAS_NAMED_SCALEFORM_MOVIE_LOADED",
             "comment": "Pretty sure it's the real name (not 100% sure so I added the _ prefix); can someone else confirm it?\n\nOnly values used in the scripts are:\n\n\"heist_mp\"\n\"heistmap_mp\"\n\"instructional_buttons\"\n\"heist_pre\"",
+            "jhash": "0x494A9E50",
             "params": [
                 {
                     "type": "const char*",
@@ -30512,7 +30530,8 @@
         },
         "0xDDE23F30CC5A0F03": {
             "name": "_START_PARTICLE_FX_LOOPED_ON_ENTITY_BONE_2",
-            "comment": "Console Hash: 0xF478EFCF\n\nnetwork fx",
+            "comment": "network fx",
+            "jhash": "0xF478EFCF",
             "params": [
                 {
                     "type": "const char*",
@@ -30641,7 +30660,8 @@
         },
         "0xC95EB1DB6E92113D": {
             "name": "_START_PARTICLE_FX_NON_LOOPED_ON_ENTITY_2",
-            "comment": "Console hash: 0x469A2B4A\n\nnetwork fx",
+            "comment": "network fx",
+            "jhash": "0x469A2B4A",
             "params": [
                 {
                     "type": "const char*",
@@ -31515,6 +31535,7 @@
         "0xDEADC0DEDEADC0DE": {
             "name": "_0xDEADC0DEDEADC0DE",
             "comment": "Only found twice in decompiled scripts. Something to do with an entity/object?\n\nOn a side note, it's very interesting how the hash for this native is \"DEADC0DE\" - this is usually used as padding for initializing a buffer of some sort. I wonder if this native is actually \"dead\"?\n\n\"carmod_shop.ysc\", line 9520:\nif (ENTITY::DOES_ENTITY_EXIST(l_324._f6)) {\n    GRAPHICS::_0xDEADC0DEDEADC0DE(l_324._f6);\n}\n\n\"fm_mission_controller.ysc\", line 189641:\nif (GAMEPLAY::IS_BIT_SET(g_1870E1._f7B64[a_0/*104*/]._f25, 28)) {\n    GRAPHICS::_0xDEADC0DEDEADC0DE(NETWORK::NET_TO_OBJ(l_4064._f26A._f87[a_0/*1*/]));\n    if (!GAMEPLAY::IS_BIT_SET(g_1870E1._f7B64[a_0/*104*/]._f25, 31)) {\n        if (!ENTITY::IS_ENTITY_DEAD(v_7)) {\n            AUDIO::PLAY_SOUND_FROM_ENTITY(-1, \"EMP_Vehicle_Hum\", v_7, \"DLC_HEIST_BIOLAB_DELIVER_EMP_SOUNDS\", 0, 0);\n            GAMEPLAY::SET_BIT(&g_1870E1._f7B64[a_0/*104*/]._f25, 31);\n        }\n    }\n}\n\nConsole Hash: 0xC12AC47A\n\n----------\n\nIt's most likely named UPDATE_* (like UPDATE_ENTITY_SHIT_OR_SOMETHING).",
+            "jhash": "0xC12AC47A",
             "params": [
                 {
                     "type": "Object",
@@ -31651,6 +31672,7 @@
         "0x7FDFADE676AA3CB0": {
             "name": "_0x7FDFADE676AA3CB0",
             "comment": "",
+            "jhash": "0xABF783AB",
             "params": [
                 {
                     "type": "Any",
@@ -34281,6 +34303,7 @@
         "0xBA8D65C1C65702E5": {
             "name": "_0xBA8D65C1C65702E5",
             "comment": "",
+            "jhash": "0x58612465",
             "params": [
                 {
                     "type": "bool",
@@ -35684,6 +35707,7 @@
         "0xAF754F20EB5CD51A": {
             "name": "_IS_RADAR_ENABLED",
             "comment": "",
+            "jhash": "0x9CD18314",
             "params": [],
             "return_type": "bool",
             "first_build": "323",
@@ -39653,6 +39677,7 @@
         "0x92F0DA1E27DB96DC": {
             "name": "_SET_NOTIFICATION_BACKGROUND_COLOR",
             "comment": "From the decompiled scripts:\nUI::_92F0DA1E27DB96DC(6);\nUI::_92F0DA1E27DB96DC(184);\nUI::_92F0DA1E27DB96DC(190);\n\nsets background color for the next notification\n6 = red\n184 = green\n190 = yellow\n\nHere is a list of some colors that can be used: gyazo.com/68bd384455fceb0a85a8729e48216e15\n\nthis seems to set the alpha to 255 automatically, if you have a work around let me know ",
+            "jhash": "0x07CE2EA4",
             "params": [
                 {
                     "type": "int",
@@ -40948,6 +40973,7 @@
         "0x2D4259F1FEB81DA9": {
             "name": "_0x2D4259F1FEB81DA9",
             "comment": "",
+            "jhash": "0x8C913A91",
             "params": [
                 {
                     "type": "float",
@@ -41087,6 +41113,7 @@
         "0x32C7A7E8C43A1F80": {
             "name": "_0x32C7A7E8C43A1F80",
             "comment": "",
+            "jhash": "0xCE4A3D20",
             "params": [
                 {
                     "type": "float",
@@ -42239,6 +42266,7 @@
         "0x1327E2FE9746BAEE": {
             "name": "_0x1327E2FE9746BAEE",
             "comment": "",
+            "jhash": "0xE933B34A",
             "params": [
                 {
                     "type": "Any",
@@ -42253,6 +42281,7 @@
         "0x171BAFB3C60389F4": {
             "name": "_0x171BAFB3C60389F4",
             "comment": "",
+            "jhash": "0xD2B7A5A0",
             "params": [
                 {
                     "type": "Any",
@@ -42444,6 +42473,7 @@
         "0xB335F761606DB47C": {
             "name": "_0xB335F761606DB47C",
             "comment": "This line found 48 times in the scripts:\n\nGAMEPLAY::_B335F761606DB47C(&v_4, &v_7, a_0, v_A);",
+            "jhash": "0xE23416C1",
             "params": [
                 {
                     "type": "Any*",
@@ -44897,6 +44927,7 @@
         "0xE6869BECDD8F2403": {
             "name": "_0xE6869BECDD8F2403",
             "comment": "",
+            "jhash": "0x92E7E4EB",
             "params": [
                 {
                     "type": "Any",
@@ -44935,6 +44966,7 @@
         "0xEB2DB0CAD13154B3": {
             "name": "_0xEB2DB0CAD13154B3",
             "comment": "",
+            "jhash": "0x1479E85A",
             "params": [
                 {
                     "type": "Any",
@@ -45147,6 +45179,7 @@
         "0x02DEAAC8F8EA7FE7": {
             "name": "_0x02DEAAC8F8EA7FE7",
             "comment": "Found in the scripts:\n\nGAMEPLAY::_02DEAAC8F8EA7FE7(\"\");",
+            "jhash": "0xAA10752D",
             "params": [
                 {
                     "type": "const char*",
@@ -46116,7 +46149,8 @@
         },
         "0xBFE5756E7407064A": {
             "name": "_SHOOT_SINGLE_AIRSTRIKE_BULLET_BETWEEN_COORDS",
-            "comment": "Since latest patches has 18 parameters.\n\nConsole Hash: 0xCCDC33CC\n\nentity - entity to ignore",
+            "comment": "Since latest patches has 18 parameters.\n\nentity - entity to ignore",
+            "jhash": "0xCCDC33CC",
             "params": [
                 {
                     "type": "float",
@@ -49855,6 +49889,7 @@
         "0xCFEB8AF24FC1D0BB": {
             "name": "_0xCFEB8AF24FC1D0BB",
             "comment": "",
+            "jhash": "0x8AB4890B",
             "params": [
                 {
                     "type": "bool",
@@ -53068,6 +53103,7 @@
         "0x3F9990BF5F22759C": {
             "name": "_0x3F9990BF5F22759C",
             "comment": "",
+            "jhash": "0x00F26CDC",
             "params": [
                 {
                     "type": "Any*",
@@ -53498,6 +53534,7 @@
         "0xC01E93FAC20C3346": {
             "name": "_NETWORK_HAS_CONTROL_OF_PAVEMENT_STATS",
             "comment": "",
+            "jhash": "0xD14D9C07",
             "params": [
                 {
                     "type": "Hash",
@@ -54097,6 +54134,7 @@
         "0x8D11E61A4ABF49CC": {
             "name": "_0x8D11E61A4ABF49CC",
             "comment": "Maybe NETWORK_IS_PSN_AVAILABLE as it only applies to the PS4 version.",
+            "jhash": "0xBDC8F63E",
             "params": [],
             "return_type": "bool",
             "first_build": "323",
@@ -54226,6 +54264,7 @@
         "0xC571D0E77D8BBC29": {
             "name": "_0xC571D0E77D8BBC29",
             "comment": "NETWORK_IS_TRANSITION_???",
+            "jhash": "0x4F4BB300",
             "params": [],
             "return_type": "Any",
             "first_build": "323",
@@ -54332,7 +54371,8 @@
         },
         "0x59DF79317F85A7E0": {
             "name": "_0x59DF79317F85A7E0",
-            "comment": "may be 0x6CDAA7D2\n\nsfink: related to: NETWORK_BAIL\nNETWORK_BAIL_TRANSITION\nNETWORK_JOIN_GROUP_ACTIVITY\nNETWORK_JOIN_TRANSITION\nNETWORK_LAUNCH_TRANSITION\nNETWORK_SESSION_HOST\nNETWORK_SESSION_HOST_CLOSED\nNETWORK_SESSION_HOST_FRIENDS_ONLY\nNETWORK_SESSION_HOST_SINGLE_PLAYER\nNETWORK_SESSION_VOICE_LEAVE",
+            "comment": "sfink: related to: NETWORK_BAIL\nNETWORK_BAIL_TRANSITION\nNETWORK_JOIN_GROUP_ACTIVITY\nNETWORK_JOIN_TRANSITION\nNETWORK_LAUNCH_TRANSITION\nNETWORK_SESSION_HOST\nNETWORK_SESSION_HOST_CLOSED\nNETWORK_SESSION_HOST_FRIENDS_ONLY\nNETWORK_SESSION_HOST_SINGLE_PLAYER\nNETWORK_SESSION_VOICE_LEAVE",
+            "jhash": "0x6CDAA7D2",
             "params": [],
             "return_type": "Any",
             "first_build": "323",
@@ -54341,7 +54381,8 @@
         },
         "0xFFE1E5B792D92B34": {
             "name": "_0xFFE1E5B792D92B34",
-            "comment": "may be 0xBF21818E\n\nrelated to: NETWORK_BAIL\nNETWORK_BAIL_TRANSITION\nNETWORK_JOIN_GROUP_ACTIVITY\nNETWORK_JOIN_TRANSITION\nNETWORK_LAUNCH_TRANSITION\nNETWORK_SESSION_HOST\nNETWORK_SESSION_HOST_CLOSED\nNETWORK_SESSION_HOST_FRIENDS_ONLY\nNETWORK_SESSION_HOST_SINGLE_PLAYER\nNETWORK_SESSION_VOICE_LEAVE",
+            "comment": "related to: NETWORK_BAIL\nNETWORK_BAIL_TRANSITION\nNETWORK_JOIN_GROUP_ACTIVITY\nNETWORK_JOIN_TRANSITION\nNETWORK_LAUNCH_TRANSITION\nNETWORK_SESSION_HOST\nNETWORK_SESSION_HOST_CLOSED\nNETWORK_SESSION_HOST_FRIENDS_ONLY\nNETWORK_SESSION_HOST_SINGLE_PLAYER\nNETWORK_SESSION_VOICE_LEAVE",
+            "jhash": "0xBF21818E",
             "params": [],
             "return_type": "Any",
             "first_build": "323",
@@ -55582,6 +55623,7 @@
         "0x53AFD64C6758F2F9": {
             "name": "_0x53AFD64C6758F2F9",
             "comment": "",
+            "jhash": "0xE642F2FD",
             "params": [],
             "return_type": "Any",
             "first_build": "323",
@@ -55697,6 +55739,7 @@
         "0xBDB6F89C729CF388": {
             "name": "_0xBDB6F89C729CF388",
             "comment": "",
+            "jhash": "0x9374523F",
             "params": [],
             "return_type": "Any",
             "first_build": "323",
@@ -56108,6 +56151,7 @@
         "0x0E4F77F7B9D74D84": {
             "name": "_0x0E4F77F7B9D74D84",
             "comment": "",
+            "jhash": "0x04CB2AB4",
             "params": [
                 {
                     "type": "Any",
@@ -56219,6 +56263,7 @@
         "0xA2E9C1AB8A92E8CD": {
             "name": "_0xA2E9C1AB8A92E8CD",
             "comment": "",
+            "jhash": "0x8D014B23",
             "params": [
                 {
                     "type": "bool",
@@ -56792,7 +56837,8 @@
         },
         "0x0C978FDA19692C2C": {
             "name": "_0x0C978FDA19692C2C",
-            "comment": "x360 Hash: 0x4AF0ADF5",
+            "comment": "",
+            "jhash": "0x4AF0ADF5",
             "params": [
                 {
                     "type": "bool",
@@ -59933,6 +59979,7 @@
         "0x9B5016A6433A68C5": {
             "name": "_0x9B5016A6433A68C5",
             "comment": "",
+            "jhash": "0xBD64F1B7",
             "params": [],
             "return_type": "Any",
             "first_build": "323"
@@ -59963,6 +60010,7 @@
         "0xA3EDDAA42411D3B9": {
             "name": "_0xA3EDDAA42411D3B9",
             "comment": "",
+            "jhash": "0x2AD2EC51",
             "params": [],
             "return_type": "Any",
             "first_build": "323"
@@ -60185,6 +60233,7 @@
         "0x75AF80E61248EEBD": {
             "name": "_0x75AF80E61248EEBD",
             "comment": "",
+            "jhash": "0xC0AB03EB",
             "params": [],
             "return_type": "Any",
             "first_build": "323"
@@ -61058,6 +61107,7 @@
         "0xEA560AC9EEB1E19B": {
             "name": "_0xEA560AC9EEB1E19B",
             "comment": "",
+            "jhash": "0xA9021211",
             "params": [],
             "return_type": "Any",
             "first_build": "323"
@@ -61429,6 +61479,7 @@
         "0xCA230C9682556CF1": {
             "name": "_0xCA230C9682556CF1",
             "comment": "",
+            "jhash": "0xF02E92D7",
             "params": [],
             "return_type": "Any",
             "first_build": "323"
@@ -64844,7 +64895,8 @@
         },
         "0x11D1E53A726891FE": {
             "name": "_0x11D1E53A726891FE",
-            "comment": "console hash: 0x883DAB2D",
+            "comment": "",
+            "jhash": "0x883DAB2D",
             "params": [
                 {
                     "type": "Object",
@@ -85568,6 +85620,7 @@
         "0x18C1270EA7F199BC": {
             "name": "_GET_NO_LOADING_SCREEN",
             "comment": "",
+            "jhash": "0x27512BA0",
             "params": [],
             "return_type": "bool",
             "first_build": "323",
@@ -86752,6 +86805,7 @@
         "0xFFE5C16F402D851D": {
             "name": "_SC_INBOX_MESSAGE_GET_DATA_BOOL",
             "comment": "",
+            "jhash": "0x6A67FC31",
             "params": [
                 {
                     "type": "int",
@@ -88952,6 +89006,7 @@
         "0xAFC7E5E075A96F46": {
             "name": "_PLAYSTATS_AMBIENT_MISSION_CRATE_CREATED",
             "comment": "",
+            "jhash": "0xD003E648",
             "params": [
                 {
                     "type": "float",
@@ -89469,6 +89524,7 @@
         "0xF5BB8DAC426A52C0": {
             "name": "_0xF5BB8DAC426A52C0",
             "comment": "",
+            "jhash": "0x40520E70",
             "params": [
                 {
                     "type": "Any*",
@@ -92038,6 +92094,7 @@
         "0xBD605B8E0E18B3BB": {
             "name": "_0xBD605B8E0E18B3BB",
             "comment": "",
+            "jhash": "0x59CC312D",
             "params": [],
             "return_type": "void",
             "first_build": "323",
@@ -92062,6 +92119,7 @@
         "0xD4793DFF3AF2ABCD": {
             "name": "_0xD4793DFF3AF2ABCD",
             "comment": "",
+            "jhash": "0x4062FF73",
             "params": [],
             "return_type": "void",
             "first_build": "323",
@@ -93349,6 +93407,7 @@
         "0x0811381EF5062FEC": {
             "name": "_0x0811381EF5062FEC",
             "comment": "",
+            "jhash": "0xECE8365D",
             "params": [
                 {
                     "type": "Entity",
@@ -107751,6 +107810,7 @@
         "0x3133B907D8B32053": {
             "name": "_0x3133B907D8B32053",
             "comment": "",
+            "jhash": "0xE81649C0",
             "params": [
                 {
                     "type": "Any",
