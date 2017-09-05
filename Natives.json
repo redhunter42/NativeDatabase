@@ -2276,6 +2276,20 @@
             "param_count": 2,
             "return_size": 0
         },
+        "0xCA4CEA6AE0000A7E": {
+            "name": "_0xCA4CEA6AE0000A7E",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 1,
+            "return_size": 0
+        },
         "0x9D74AE343DB65533": {
             "name": "PREPARE_ALARM",
             "comment": "Example:\n\nbool prepareAlarm = AUDIO::PREPARE_ALARM(\"PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS\");",
@@ -2378,35 +2392,6 @@
             "return_type": "void",
             "first_build": "573",
             "param_count": 0,
-            "return_size": 0
-        },
-        "0x77ED170667F50170": {
-            "name": "RELEASE_NAMED_SCRIPT_AUDIO_BANK",
-            "comment": "",
-            "jhash": "0x16707ABC",
-            "params": [
-                {
-                    "type": "const char*",
-                    "name": "audioBank"
-                }
-            ],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 0
-        },
-        "0x11579D940949C49E": {
-            "name": "_0x11579D940949C49E",
-            "comment": "",
-            "params": [
-                {
-                    "type": "Any",
-                    "name": "p0"
-                }
-            ],
-            "return_type": "void",
-            "first_build": "678",
-            "param_count": 1,
             "return_size": 0
         },
         "0x0EC92A1BF0857187": {
@@ -2639,26 +2624,6 @@
             "return_type": "void",
             "first_build": "323",
             "param_count": 1,
-            "return_size": 0
-        },
-        "0x23641AFE870AF385": {
-            "name": "START_PRELOADED_CONVERSATION",
-            "comment": "",
-            "jhash": "0xA170261B",
-            "params": [],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 0
-        },
-        "0x9AEB285D1818C9AC": {
-            "name": "RESTART_SCRIPTED_CONVERSATION",
-            "comment": "",
-            "jhash": "0x6CB24B56",
-            "params": [],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 0,
             "return_size": 0
         },
         "0x70B8EC8FC108A634": {
@@ -4020,6 +3985,26 @@
             "param_count": 1,
             "return_size": 1
         },
+        "0x23641AFE870AF385": {
+            "name": "START_PRELOADED_CONVERSATION",
+            "comment": "",
+            "jhash": "0xA170261B",
+            "params": [],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 0
+        },
+        "0x9AEB285D1818C9AC": {
+            "name": "RESTART_SCRIPTED_CONVERSATION",
+            "comment": "",
+            "jhash": "0x6CB24B56",
+            "params": [],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 0
+        },
         "0x6B17C62C9635D2DC": {
             "name": "START_SCRIPT_CONVERSATION",
             "comment": "",
@@ -4282,6 +4267,35 @@
             "param_count": 1,
             "return_size": 0
         },
+        "0x77ED170667F50170": {
+            "name": "RELEASE_NAMED_SCRIPT_AUDIO_BANK",
+            "comment": "",
+            "jhash": "0x16707ABC",
+            "params": [
+                {
+                    "type": "const char*",
+                    "name": "audioBank"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 0
+        },
+        "0x11579D940949C49E": {
+            "name": "_0x11579D940949C49E",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "678",
+            "param_count": 1,
+            "return_size": 0
+        },
         "0xB165AB7C248B2DC1": {
             "name": "UNLOCK_MISSION_NEWS_STORY",
             "comment": "I see this as a native that would of been used back in GTA III when you finally unlocked the bridge to the next island and such.",
@@ -4435,6 +4449,16 @@
         }
     },
     "BRAIN": {
+        "0x4202BBCB8684563D": {
+            "name": "RESET_EXCLUSIVE_SCENARIO_GROUP",
+            "comment": "",
+            "jhash": "0x17F9DFE8",
+            "params": [],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 0
+        },
         "0x90A09F3A45FED688": {
             "name": "IS_PED_BEING_ARRESTED",
             "comment": "This function is hard-coded to always return 0.",
@@ -4449,16 +4473,6 @@
             "first_build": "323",
             "param_count": 1,
             "return_size": 1
-        },
-        "0x4202BBCB8684563D": {
-            "name": "RESET_EXCLUSIVE_SCENARIO_GROUP",
-            "comment": "",
-            "jhash": "0x17F9DFE8",
-            "params": [],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 0
         },
         "0x45C597097DD7CB81": {
             "name": "ADD_COVER_BLOCKING_AREA",
@@ -9202,11 +9216,15 @@
                 {
                     "type": "float",
                     "name": "minAltitude"
+                },
+                {
+                    "type": "Any",
+                    "name": "p13"
                 }
             ],
             "return_type": "void",
             "first_build": "323",
-            "param_count": 13,
+            "param_count": 14,
             "return_size": 0
         },
         "0x92C360B5F15D2302": {
@@ -9943,11 +9961,15 @@
                 {
                     "type": "Vehicle",
                     "name": "vehicle"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
                 }
             ],
             "return_type": "void",
             "first_build": "323",
-            "param_count": 2,
+            "param_count": 3,
             "return_size": 0
         },
         "0x601736CFE536B0A0": {
@@ -12713,6 +12735,15 @@
             "param_count": 0,
             "return_size": 0
         },
+        "0xB1381B97F70C7B30": {
+            "name": "_0xB1381B97F70C7B30",
+            "comment": "",
+            "params": [],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 0,
+            "return_size": 0
+        },
         "0x59424BD75174C9B1": {
             "name": "_0x59424BD75174C9B1",
             "comment": "",
@@ -13300,6 +13331,56 @@
             "first_build": "323",
             "param_count": 0,
             "return_size": 1
+        },
+        "0x149916F50C34A40D": {
+            "name": "_0x149916F50C34A40D",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                },
+                {
+                    "type": "Any",
+                    "name": "p4"
+                },
+                {
+                    "type": "Any",
+                    "name": "p5"
+                },
+                {
+                    "type": "Any",
+                    "name": "p6"
+                },
+                {
+                    "type": "Any",
+                    "name": "p7"
+                },
+                {
+                    "type": "Any",
+                    "name": "p8"
+                },
+                {
+                    "type": "Any",
+                    "name": "p9"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 10,
+            "return_size": 0
         },
         "0x7B8A361C1813FBEF": {
             "name": "_0x7B8A361C1813FBEF",
@@ -16033,6 +16114,20 @@
             "param_count": 1,
             "return_size": 0
         },
+        "0x425A920FDB9A0DDA": {
+            "name": "_0x425A920FDB9A0DDA",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 1,
+            "return_size": 0
+        },
         "0x271401846BD26E92": {
             "name": "_0x271401846BD26E92",
             "comment": "",
@@ -16479,20 +16574,6 @@
             "param_count": 0,
             "return_size": 1
         },
-        "0x4CEBC1ED31E8925E": {
-            "name": "_0x4CEBC1ED31E8925E",
-            "comment": "This function is hard-coded to always return 1.",
-            "params": [
-                {
-                    "type": "const char*",
-                    "name": "cutsceneName"
-                }
-            ],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
         "0x499EF20C5DB25C59": {
             "name": "DOES_CUTSCENE_ENTITY_EXIST",
             "comment": "",
@@ -16652,6 +16733,20 @@
             "name": "HAS_THIS_CUTSCENE_LOADED",
             "comment": "",
             "jhash": "0x3C5619F2",
+            "params": [
+                {
+                    "type": "const char*",
+                    "name": "cutsceneName"
+                }
+            ],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0x4CEBC1ED31E8925E": {
+            "name": "_0x4CEBC1ED31E8925E",
+            "comment": "This function is hard-coded to always return 1.",
             "params": [
                 {
                     "type": "const char*",
@@ -18530,26 +18625,6 @@
             "param_count": 0,
             "return_size": 1
         },
-        "0xF2E07819EF1A5289": {
-            "name": "_0xF2E07819EF1A5289",
-            "comment": "MulleDK19: This function is hard-coded to always return 1.",
-            "jhash": "0x881B1FDB",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0xA213B11DFF526300": {
-            "name": "_0xA213B11DFF526300",
-            "comment": "MulleDK19: This function is hard-coded to always return 1.",
-            "jhash": "0xF79A97F5",
-            "params": [],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
         "0x8D30F648014A92B5": {
             "name": "_0x8D30F648014A92B5",
             "comment": "",
@@ -18589,6 +18664,26 @@
             "param_count": 2,
             "return_size": 1
         },
+        "0xF2E07819EF1A5289": {
+            "name": "_0xF2E07819EF1A5289",
+            "comment": "MulleDK19: This function is hard-coded to always return 1.",
+            "jhash": "0x881B1FDB",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0xA213B11DFF526300": {
+            "name": "_0xA213B11DFF526300",
+            "comment": "MulleDK19: This function is hard-coded to always return 1.",
+            "jhash": "0xF79A97F5",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
         "0x812595A0644CE1DE": {
             "name": "IS_DLC_PRESENT",
             "comment": "Example:\nDLC2::IS_DLC_PRESENT($\\mpbusiness2\\);\n($ = gethashkey)\n\nbruteforce these:\n0xB119F6D\n0x96F02EE6",
@@ -18602,16 +18697,6 @@
             "return_type": "bool",
             "first_build": "323",
             "param_count": 1,
-            "return_size": 1
-        },
-        "0x9489659372A81585": {
-            "name": "_0x9489659372A81585",
-            "comment": "MulleDK19: This function is hard-coded to always return 0.",
-            "jhash": "0xC2169164",
-            "params": [],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 0,
             "return_size": 1
         },
         "0x0888C3502DBBEEF5": {
@@ -18631,6 +18716,16 @@
             "first_build": "323",
             "param_count": 0,
             "return_size": 0
+        },
+        "0x9489659372A81585": {
+            "name": "_0x9489659372A81585",
+            "comment": "MulleDK19: This function is hard-coded to always return 0.",
+            "jhash": "0xC2169164",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
         }
     },
     "ENTITY": {
@@ -19755,6 +19850,24 @@
             "return_type": "Hash",
             "first_build": "323",
             "param_count": 1,
+            "return_size": 1
+        },
+        "0x1F922734E259BD26": {
+            "name": "_0x1F922734E259BD26",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "1180",
+            "param_count": 2,
             "return_size": 1
         },
         "0xD45DC2893621E1FE": {
@@ -21417,6 +21530,24 @@
             "param_count": 3,
             "return_size": 0
         },
+        "0x68B562E124CC0AEF": {
+            "name": "_0x68B562E124CC0AEF",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 2,
+            "return_size": 0
+        },
         "0x1760FFA8AB074D66": {
             "name": "SET_ENTITY_CAN_BE_DAMAGED",
             "comment": "",
@@ -21848,11 +21979,15 @@
                 {
                     "type": "bool",
                     "name": "toggle"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
                 }
             ],
             "return_type": "void",
             "first_build": "323",
-            "param_count": 2,
+            "param_count": 3,
             "return_size": 0
         },
         "0x5927F96A78577363": {
@@ -22341,6 +22476,24 @@
             ],
             "return_type": "void",
             "first_build": "678",
+            "param_count": 2,
+            "return_size": 0
+        },
+        "0xD7B80E7C3BEFC396": {
+            "name": "_0xD7B80E7C3BEFC396",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
             "param_count": 2,
             "return_size": 0
         },
@@ -24044,16 +24197,6 @@
         }
     },
     "GRAPHICS": {
-        "0xC6796A8FFA375E53": {
-            "name": "_POP_SCALEFORM_MOVIE_FUNCTION_VOID",
-            "comment": "Pops and calls the Scaleform function on the stack",
-            "jhash": "0x02DBF2D7",
-            "params": [],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 0
-        },
         "0x82ACC484FFA3B05F": {
             "name": "_0x82ACC484FFA3B05F",
             "comment": "",
@@ -26791,6 +26934,16 @@
             "param_count": 0,
             "return_size": 0
         },
+        "0xC6796A8FFA375E53": {
+            "name": "_POP_SCALEFORM_MOVIE_FUNCTION_VOID",
+            "comment": "Pops and calls the Scaleform function on the stack",
+            "jhash": "0x02DBF2D7",
+            "params": [],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 0
+        },
         "0xC50AA39A577AF886": {
             "name": "_POP_SCALEFORM_MOVIE_FUNCTION",
             "comment": "Pops and calls the Scaleform movie on the stack. Returns data from the function (not sure if this is a string).",
@@ -27875,6 +28028,21 @@
             "param_count": 1,
             "return_size": 1
         },
+        "0xDF6E5987D2B4D140": {
+            "name": "_HAS_HUD_SCALEFORM_LOADED",
+            "comment": "Check to see if hud component Scaleform has loaded?",
+            "jhash": "0x79B43255",
+            "params": [
+                {
+                    "type": "int",
+                    "name": "hudComponent"
+                }
+            ],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
         "0x0145F696AAAAD2E4": {
             "name": "HAS_STREAMED_TEXTURE_DICT_LOADED",
             "comment": "",
@@ -27905,72 +28073,6 @@
             "param_count": 1,
             "return_size": 1
         },
-        "0x34D23450F028B0BF": {
-            "name": "GET_MAXIMUM_NUMBER_OF_PHOTOS",
-            "comment": "This function is hard-coded to always return 0.",
-            "jhash": "0x727AA63F",
-            "params": [],
-            "return_type": "int",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0xE791DF1F73ED2C8B": {
-            "name": "_0xE791DF1F73ED2C8B",
-            "comment": "This function is hard-coded to always return 0.",
-            "jhash": "0x9D84554C",
-            "params": [
-                {
-                    "type": "Any",
-                    "name": "p0"
-                }
-            ],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0xEC72C258667BE5EA": {
-            "name": "_0xEC72C258667BE5EA",
-            "comment": "This function is hard-coded to always return 0.",
-            "jhash": "0x9C106AD9",
-            "params": [
-                {
-                    "type": "Any",
-                    "name": "p0"
-                }
-            ],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0xBE197EAA669238F4": {
-            "name": "_0xBE197EAA669238F4",
-            "comment": "This function is hard-coded to always return 0.",
-            "params": [
-                {
-                    "type": "Any",
-                    "name": "p0"
-                },
-                {
-                    "type": "Any",
-                    "name": "p1"
-                },
-                {
-                    "type": "Any",
-                    "name": "p2"
-                },
-                {
-                    "type": "Any",
-                    "name": "p3"
-                }
-            ],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 4,
-            "return_size": 1
-        },
         "0x768FF8961BA904D6": {
             "name": "_0x768FF8961BA904D6",
             "comment": "Seems to take data that is returned from \"_POP_SCALEFORM_MOVIE_FUNCTION\" and checks to see if it's not null/empty.\n\n\"agency_heist3b.ysc\", line 71836:\nif (CONTROLS::IS_CONTROL_JUST_PRESSED(2, 201) || CONTROLS::IS_CONTROL_JUST_PRESSED(2, 237)) {\n    GRAPHICS::_PUSH_SCALEFORM_MOVIE_FUNCTION(l_46, \"SET_INPUT_EVENT_SELECT\");\n    l_45 = GRAPHICS::_POP_SCALEFORM_MOVIE_FUNCTION();\n}\nif (GRAPHICS::_0x768FF8961BA904D6(l_45)) {\n    v_13 = GRAPHICS::_0x2DE7EFA66B906036(l_45);\n    if (v_13 == 6) {\n        sub_73269(a_0);\n    }\n}\n",
@@ -27994,21 +28096,6 @@
             "return_type": "Any",
             "first_build": "323",
             "param_count": 0,
-            "return_size": 1
-        },
-        "0xDF6E5987D2B4D140": {
-            "name": "_HAS_HUD_SCALEFORM_LOADED",
-            "comment": "Check to see if hud component Scaleform has loaded?",
-            "jhash": "0x79B43255",
-            "params": [
-                {
-                    "type": "int",
-                    "name": "hudComponent"
-                }
-            ],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 1,
             "return_size": 1
         },
         "0xC45CCDAAC9221CA8": {
@@ -29144,6 +29231,46 @@
             ],
             "return_type": "void",
             "first_build": "323",
+            "param_count": 1,
+            "return_size": 0
+        },
+        "0x3C788E7F6438754D": {
+            "name": "_0x3C788E7F6438754D",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 4,
+            "return_size": 0
+        },
+        "0xDB1EA9411C8911EC": {
+            "name": "_0xDB1EA9411C8911EC",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
             "param_count": 1,
             "return_size": 0
         },
@@ -31654,6 +31781,72 @@
             "param_count": 1,
             "return_size": 0
         },
+        "0x34D23450F028B0BF": {
+            "name": "GET_MAXIMUM_NUMBER_OF_PHOTOS",
+            "comment": "This function is hard-coded to always return 0.",
+            "jhash": "0x727AA63F",
+            "params": [],
+            "return_type": "int",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0xE791DF1F73ED2C8B": {
+            "name": "_0xE791DF1F73ED2C8B",
+            "comment": "This function is hard-coded to always return 0.",
+            "jhash": "0x9D84554C",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0xEC72C258667BE5EA": {
+            "name": "_0xEC72C258667BE5EA",
+            "comment": "This function is hard-coded to always return 0.",
+            "jhash": "0x9C106AD9",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0xBE197EAA669238F4": {
+            "name": "_0xBE197EAA669238F4",
+            "comment": "This function is hard-coded to always return 0.",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 4,
+            "return_size": 1
+        },
         "0x175B6BFC15CDD0C5": {
             "name": "SET_DEBUG_LINES_AND_SPHERES_DRAWING_ACTIVE",
             "comment": "NOTE: Debugging functions are not present in the retail version of the game.",
@@ -32288,6 +32481,51 @@
             "param_count": 1,
             "return_size": 0
         },
+        "0x6C188BE134E074AA": {
+            "name": "ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME",
+            "comment": "\u2022 Description :\n\n Processes a string and removes the player name(max len 99)\n You can use this function to create notifications/subtitles\n--------------------------------------------------------------------\n\u2022 Usage(Colors) :\n\n ~r~ = red\n ~y~ = yellow\n ~g~ = green\n ~b~ = light blue\n ~w~ = white\n ~p~ = purple\n ~n~ = new line\n\n--------------------------------------------------------------------\n\u2022 Usage(Input) :\n~INPUT_CONTEXT~ will show button symbol (regarding last input device -> keyboard/gamepad)\nexample:\nstring info = \"Context action is assigned to ~INPUT_CONTEXT~!\";\n\n--------------------------------------------------------------------\n\u2022 Example (C++):\n\nvoid ShowNotification(char *text)  \n{ \n        UI::_SET_NOTIFICATION_TEXT_ENTRY(\"STRING\"); \n        UI::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text); \n        UI::_DRAW_NOTIFICATION(FALSE, FALSE); // if first param = 1, the message flashes 1 or 2 times\n}\n\n\u2022 Colors example : \n\nstring red = \"~r~Red test\";\nstring white_and_yellow = \"~w~White and ~y~yellow\";\nstring text_with_double_line = \"First line.~n~Second line\";\n\nThis native (along with 0x5F68520888E69014 and 0x94CF4AC034C9C986) do not actually filter anything. They simply add the provided text (as of 944)\n\nUsed to be known as _ADD_TEXT_COMPONENT_STRING",
+            "jhash": "0x27A244D8",
+            "params": [
+                {
+                    "type": "const char*",
+                    "name": "text"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 0
+        },
+        "0x94CF4AC034C9C986": {
+            "name": "ADD_TEXT_COMPONENT_SUBSTRING_WEBSITE",
+            "comment": "This native (along with 0x5F68520888E69014 and 0x6C188BE134E074AA) do not actually filter anything. They simply add the provided text (as of 944)",
+            "jhash": "0xC736999E",
+            "params": [
+                {
+                    "type": "const char*",
+                    "name": "website"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 0
+        },
+        "0x5F68520888E69014": {
+            "name": "_ADD_TEXT_COMPONENT_SCALEFORM",
+            "comment": "This native (along with 0x6C188BE134E074AA and 0x94CF4AC034C9C986) do not actually filter anything. They simply add the provided text (as of 944)\n\ndid you even check the disassembly?",
+            "jhash": "0x0829A799",
+            "params": [
+                {
+                    "type": "const char*",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 0
+        },
         "0x761B77454205A61D": {
             "name": "_ADD_TEXT_COMPONENT_APP_TITLE",
             "comment": "p1 was always -1.\nused for phone applications; scaleform",
@@ -32354,51 +32592,6 @@
             "return_type": "void",
             "first_build": "323",
             "param_count": 2,
-            "return_size": 0
-        },
-        "0x6C188BE134E074AA": {
-            "name": "ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME",
-            "comment": "\u2022 Description :\n\n Processes a string and removes the player name(max len 99)\n You can use this function to create notifications/subtitles\n--------------------------------------------------------------------\n\u2022 Usage(Colors) :\n\n ~r~ = red\n ~y~ = yellow\n ~g~ = green\n ~b~ = light blue\n ~w~ = white\n ~p~ = purple\n ~n~ = new line\n\n--------------------------------------------------------------------\n\u2022 Usage(Input) :\n~INPUT_CONTEXT~ will show button symbol (regarding last input device -> keyboard/gamepad)\nexample:\nstring info = \"Context action is assigned to ~INPUT_CONTEXT~!\";\n\n--------------------------------------------------------------------\n\u2022 Example (C++):\n\nvoid ShowNotification(char *text)  \n{ \n        UI::_SET_NOTIFICATION_TEXT_ENTRY(\"STRING\"); \n        UI::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(text); \n        UI::_DRAW_NOTIFICATION(FALSE, FALSE); // if first param = 1, the message flashes 1 or 2 times\n}\n\n\u2022 Colors example : \n\nstring red = \"~r~Red test\";\nstring white_and_yellow = \"~w~White and ~y~yellow\";\nstring text_with_double_line = \"First line.~n~Second line\";\n\nThis native (along with 0x5F68520888E69014 and 0x94CF4AC034C9C986) do not actually filter anything. They simply add the provided text (as of 944)\n\nUsed to be known as _ADD_TEXT_COMPONENT_STRING",
-            "jhash": "0x27A244D8",
-            "params": [
-                {
-                    "type": "const char*",
-                    "name": "text"
-                }
-            ],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 0
-        },
-        "0x94CF4AC034C9C986": {
-            "name": "ADD_TEXT_COMPONENT_SUBSTRING_WEBSITE",
-            "comment": "This native (along with 0x5F68520888E69014 and 0x6C188BE134E074AA) do not actually filter anything. They simply add the provided text (as of 944)",
-            "jhash": "0xC736999E",
-            "params": [
-                {
-                    "type": "const char*",
-                    "name": "website"
-                }
-            ],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 0
-        },
-        "0x5F68520888E69014": {
-            "name": "_ADD_TEXT_COMPONENT_SCALEFORM",
-            "comment": "This native (along with 0x6C188BE134E074AA and 0x94CF4AC034C9C986) do not actually filter anything. They simply add the provided text (as of 944)\n\ndid you even check the disassembly?",
-            "jhash": "0x0829A799",
-            "params": [
-                {
-                    "type": "const char*",
-                    "name": "p0"
-                }
-            ],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 1,
             "return_size": 0
         },
         "0xE67C6DFD386EA5E7": {
@@ -33227,26 +33420,6 @@
             "param_count": 0,
             "return_size": 0
         },
-        "0x52F0982D7FD156B6": {
-            "name": "GET_DEFAULT_SCRIPT_RENDERTARGET_RENDER_ID",
-            "comment": "This function is hard-coded to always return 1.",
-            "jhash": "0x8188935F",
-            "params": [],
-            "return_type": "int",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0x4A9923385BDB9DAD": {
-            "name": "_0x4A9923385BDB9DAD",
-            "comment": "example:\n\nif (!((v_7)==UI::_4A9923385BDB9DAD())) {\n        UI::SET_BLIP_SPRITE((v_6), (v_7));\n    }\n\n\nThis function is hard-coded to always return 1.",
-            "jhash": "0x87871CE0",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
         "0xA6DB27D19ECBB7DA": {
             "name": "DOES_BLIP_EXIST",
             "comment": "",
@@ -33329,6 +33502,15 @@
             "params": [],
             "return_type": "void",
             "first_build": "323",
+            "param_count": 0,
+            "return_size": 0
+        },
+        "0x55F5A5F07134DE60": {
+            "name": "_0x55F5A5F07134DE60",
+            "comment": "",
+            "params": [],
+            "return_type": "void",
+            "first_build": "1180",
             "param_count": 0,
             "return_size": 0
         },
@@ -34666,6 +34848,20 @@
             "param_count": 5,
             "return_size": 1
         },
+        "0xD484BF71050CA1EE": {
+            "name": "_0xD484BF71050CA1EE",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "1180",
+            "param_count": 1,
+            "return_size": 1
+        },
         "0x2309595AD6145265": {
             "name": "_GET_CURRENT_FRONTEND_MENU",
             "comment": "if (UI::_2309595AD6145265() == ${fe_menu_version_empty_no_background})\n\nSeems to get the current frontend menu",
@@ -35303,6 +35499,21 @@
             "param_count": 0,
             "return_size": 1
         },
+        "0xDD100EB17A94FF65": {
+            "name": "IS_SCRIPTED_HUD_COMPONENT_ACTIVE",
+            "comment": "",
+            "jhash": "0x2B86F382",
+            "params": [
+                {
+                    "type": "int",
+                    "name": "id"
+                }
+            ],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
         "0x214CD562A939246A": {
             "name": "_0x214CD562A939246A",
             "comment": "example\n\nif (UI::IS_HELP_MESSAGE_BEING_DISPLAYED()&&(!UI::_214CD562A939246A())) {\n        return 0;\n}",
@@ -35330,6 +35541,26 @@
             "return_type": "bool",
             "first_build": "323",
             "param_count": 2,
+            "return_size": 1
+        },
+        "0x52F0982D7FD156B6": {
+            "name": "GET_DEFAULT_SCRIPT_RENDERTARGET_RENDER_ID",
+            "comment": "This function is hard-coded to always return 1.",
+            "jhash": "0x8188935F",
+            "params": [],
+            "return_type": "int",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0x4A9923385BDB9DAD": {
+            "name": "_0x4A9923385BDB9DAD",
+            "comment": "example:\n\nif (!((v_7)==UI::_4A9923385BDB9DAD())) {\n        UI::SET_BLIP_SPRITE((v_6), (v_7));\n    }\n\n\nThis function is hard-coded to always return 1.",
+            "jhash": "0x87871CE0",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
             "return_size": 1
         },
         "0xD46923FC481CA285": {
@@ -35566,21 +35797,6 @@
                 }
             ],
             "return_type": "bool",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0x9B6786E4C03DD382": {
-            "name": "GET_BLIP_INFO_ID_PICKUP_INDEX",
-            "comment": "This function is hard-coded to always return 0.",
-            "jhash": "0x86913D37",
-            "params": [
-                {
-                    "type": "Blip",
-                    "name": "blip"
-                }
-            ],
-            "return_type": "Pickup",
             "first_build": "323",
             "param_count": 1,
             "return_size": 1
@@ -35905,21 +36121,6 @@
             "return_type": "Any",
             "first_build": "323",
             "param_count": 0,
-            "return_size": 1
-        },
-        "0xDD100EB17A94FF65": {
-            "name": "IS_SCRIPTED_HUD_COMPONENT_ACTIVE",
-            "comment": "",
-            "jhash": "0x2B86F382",
-            "params": [
-                {
-                    "type": "int",
-                    "name": "id"
-                }
-            ],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 1,
             "return_size": 1
         },
         "0x09C0403ED9A751C2": {
@@ -38236,11 +38437,15 @@
                 {
                     "type": "bool",
                     "name": "toggle"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
                 }
             ],
             "return_type": "void",
             "first_build": "323",
-            "param_count": 3,
+            "param_count": 4,
             "return_size": 0
         },
         "0xCF228E2AA03099C3": {
@@ -39890,6 +40095,35 @@
             "param_count": 1,
             "return_size": 0
         },
+        "0x0C698D8F099174C7": {
+            "name": "_0x0C698D8F099174C7",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 1,
+            "return_size": 0
+        },
+        "0x9B6786E4C03DD382": {
+            "name": "GET_BLIP_INFO_ID_PICKUP_INDEX",
+            "comment": "This function is hard-coded to always return 0.",
+            "jhash": "0x86913D37",
+            "params": [
+                {
+                    "type": "Blip",
+                    "name": "blip"
+                }
+            ],
+            "return_type": "Pickup",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
         "0xD2049635DEB9C375": {
             "name": "_0xD2049635DEB9C375",
             "comment": "",
@@ -40575,20 +40809,20 @@
             "return_size": 0
         },
         "0xC1F1920BAF281317": {
-            "name": "_0xC1F1920BAF281317",
+            "name": "_SET_INTERIOR_PROP_COLOR",
             "comment": "",
             "params": [
                 {
-                    "type": "Any",
-                    "name": "p0"
+                    "type": "int",
+                    "name": "interiorID"
                 },
                 {
-                    "type": "Any",
-                    "name": "p1"
+                    "type": "const char*",
+                    "name": "propName"
                 },
                 {
-                    "type": "Any",
-                    "name": "p2"
+                    "type": "int",
+                    "name": "color"
                 }
             ],
             "return_type": "void",
@@ -40857,16 +41091,6 @@
         }
     },
     "MISC": {
-        "0x957E790EA1727B64": {
-            "name": "_CLEAR_CLOUD_HAT",
-            "comment": "",
-            "jhash": "0x2D7787BC",
-            "params": [],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 0
-        },
         "0x73D57CFFDD12C355": {
             "name": "ABSF",
             "comment": "",
@@ -41576,11 +41800,15 @@
                 {
                     "type": "bool",
                     "name": "p11"
+                },
+                {
+                    "type": "Any",
+                    "name": "p12"
                 }
             ],
             "return_type": "void",
             "first_build": "323",
-            "param_count": 12,
+            "param_count": 13,
             "return_size": 0
         },
         "0xA56F01F3765B93A0": {
@@ -41833,11 +42061,15 @@
                 {
                     "type": "bool",
                     "name": "p8"
+                },
+                {
+                    "type": "Any",
+                    "name": "p9"
                 }
             ],
             "return_type": "void",
             "first_build": "323",
-            "param_count": 9,
+            "param_count": 10,
             "return_size": 0
         },
         "0xE80492A9AC099A93": {
@@ -42252,16 +42484,6 @@
             "first_build": "323",
             "param_count": 12,
             "return_size": 0
-        },
-        "0x48AF36444B965238": {
-            "name": "IS_PC_VERSION",
-            "comment": "PC\n\nMulleDK19: This function is hard-coded to always return 1.",
-            "jhash": "0x4D5D9EE3",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
         },
         "0x1327E2FE9746BAEE": {
             "name": "_0x1327E2FE9746BAEE",
@@ -43624,6 +43846,16 @@
             "param_count": 0,
             "return_size": 1
         },
+        "0x48AF36444B965238": {
+            "name": "IS_PC_VERSION",
+            "comment": "PC\n\nMulleDK19: This function is hard-coded to always return 1.",
+            "jhash": "0x4D5D9EE3",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
         "0x075F1D57402C93BA": {
             "name": "_0x075F1D57402C93BA",
             "comment": "",
@@ -43884,76 +44116,6 @@
             "comment": "",
             "params": [],
             "return_type": "Any",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0x61A23B7EDA9BDA24": {
-            "name": "IS_SNIPER_INVERTED",
-            "comment": "This function is hard-coded to always return 0.",
-            "jhash": "0x5C3BF51B",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0xA72BC0B675B1519E": {
-            "name": "IS_ORBIS_VERSION",
-            "comment": "PS4\n\nMulleDK19: This function is hard-coded to always return 0.\n\nForce67: I patched return result and got this : i.imgur.com/hUn7zSj.jpg\n\ntranslate please?",
-            "jhash": "0x40282018",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0x4D982ADB1978442D": {
-            "name": "IS_DURANGO_VERSION",
-            "comment": "XBOX ONE\n\nMulleDK19: This function is hard-coded to always return 0.",
-            "jhash": "0x46FB06A5",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0xF6201B4DAF662A9D": {
-            "name": "IS_XBOX360_VERSION",
-            "comment": "XBOX 360\n\nMulleDK19: This function is hard-coded to always return 0.",
-            "jhash": "0x24005CC8",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0xCCA1072C29D096C2": {
-            "name": "IS_PS3_VERSION",
-            "comment": "PS3\n\nMulleDK19: This function is hard-coded to always return 0.",
-            "jhash": "0x4C0D5303",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0x9F1935CA1F724008": {
-            "name": "IS_AUSSIE_VERSION",
-            "comment": "if (GAMEPLAY::IS_AUSSIE_VERSION()) {\n    sub_127a9(&l_31, 1024); // l_31 |= 1024\n    l_129 = 3;\n    sub_129d2(\"AUSSIE VERSION IS TRUE!?!?!\"); // DEBUG\n}\n\nUsed to block some of the prostitute stuff due to laws in Australia.",
-            "jhash": "0x944BA1DC",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0x7EA2B6AF97ECA6ED": {
-            "name": "IS_FRONTEND_FADING",
-            "comment": "This function is hard-coded to always return 0.",
-            "jhash": "0x8FF6232C",
-            "params": [],
-            "return_type": "bool",
             "first_build": "323",
             "param_count": 0,
             "return_size": 1
@@ -45440,6 +45602,20 @@
             "param_count": 1,
             "return_size": 0
         },
+        "0xA1183BCFEE0F93D1": {
+            "name": "_0xA1183BCFEE0F93D1",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 1,
+            "return_size": 0
+        },
         "0x577D1284D6873711": {
             "name": "SET_GAME_PAUSED",
             "comment": "Make sure to call this from the correct thread if you're using multiple threads because all other threads except the one which is calling SET_GAME_PAUSED will be paused which means you will lose control and the game remains in paused mode until you exit GTA5.exe",
@@ -46519,6 +46695,16 @@
             "param_count": 0,
             "return_size": 1
         },
+        "0x957E790EA1727B64": {
+            "name": "_CLEAR_CLOUD_HAT",
+            "comment": "",
+            "jhash": "0x2D7787BC",
+            "params": [],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 0
+        },
         "0xA74802FB8D0B7814": {
             "name": "_0xA74802FB8D0B7814",
             "comment": "Called 4 times in the b617d scripts:\nGAMEPLAY::_A74802FB8D0B7814(\"CONTRAILS\", 0);",
@@ -46781,6 +46967,76 @@
             "first_build": "323",
             "param_count": 1,
             "return_size": 0
+        },
+        "0x61A23B7EDA9BDA24": {
+            "name": "IS_SNIPER_INVERTED",
+            "comment": "This function is hard-coded to always return 0.",
+            "jhash": "0x5C3BF51B",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0xA72BC0B675B1519E": {
+            "name": "IS_ORBIS_VERSION",
+            "comment": "PS4\n\nMulleDK19: This function is hard-coded to always return 0.\n\nForce67: I patched return result and got this : i.imgur.com/hUn7zSj.jpg\n\ntranslate please?",
+            "jhash": "0x40282018",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0x4D982ADB1978442D": {
+            "name": "IS_DURANGO_VERSION",
+            "comment": "XBOX ONE\n\nMulleDK19: This function is hard-coded to always return 0.",
+            "jhash": "0x46FB06A5",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0xF6201B4DAF662A9D": {
+            "name": "IS_XBOX360_VERSION",
+            "comment": "XBOX 360\n\nMulleDK19: This function is hard-coded to always return 0.",
+            "jhash": "0x24005CC8",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0xCCA1072C29D096C2": {
+            "name": "IS_PS3_VERSION",
+            "comment": "PS3\n\nMulleDK19: This function is hard-coded to always return 0.",
+            "jhash": "0x4C0D5303",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0x9F1935CA1F724008": {
+            "name": "IS_AUSSIE_VERSION",
+            "comment": "if (GAMEPLAY::IS_AUSSIE_VERSION()) {\n    sub_127a9(&l_31, 1024); // l_31 |= 1024\n    l_129 = 3;\n    sub_129d2(\"AUSSIE VERSION IS TRUE!?!?!\"); // DEBUG\n}\n\nUsed to block some of the prostitute stuff due to laws in Australia.",
+            "jhash": "0x944BA1DC",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0x7EA2B6AF97ECA6ED": {
+            "name": "IS_FRONTEND_FADING",
+            "comment": "This function is hard-coded to always return 0.",
+            "jhash": "0x8FF6232C",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
         },
         "0x4DCDF92BF64236CD": {
             "name": "_0x4DCDF92BF64236CD",
@@ -47833,6 +48089,15 @@
         }
     },
     "NETWORK": {
+        "0x1F7BC3539F9E0224": {
+            "name": "_0x1F7BC3539F9E0224",
+            "comment": "",
+            "params": [],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 0,
+            "return_size": 0
+        },
         "0xBD545D44CCE70597": {
             "name": "_0xBD545D44CCE70597",
             "comment": "MulleDK19: This function is hard-coded to always return 1.",
@@ -47854,97 +48119,6 @@
         "0x7808619F31FF22DB": {
             "name": "_0x7808619F31FF22DB",
             "comment": "MulleDK19: This function is hard-coded to always return 1.",
-            "params": [],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0x74FB3E29E6D10FA9": {
-            "name": "_0x74FB3E29E6D10FA9",
-            "comment": "MulleDK19: This function is hard-coded to always return 0.",
-            "params": [],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0xA0FA4EC6A05DA44E": {
-            "name": "_0xA0FA4EC6A05DA44E",
-            "comment": "MulleDK19: This function is hard-coded to always return 0.",
-            "params": [],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0x58CC181719256197": {
-            "name": "_0x58CC181719256197",
-            "comment": "MulleDK19: This function is hard-coded to always return 0.",
-            "params": [
-                {
-                    "type": "Any",
-                    "name": "p0"
-                },
-                {
-                    "type": "Any",
-                    "name": "p1"
-                },
-                {
-                    "type": "Any",
-                    "name": "p2"
-                }
-            ],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 3,
-            "return_size": 1
-        },
-        "0x0BE73DA6984A6E33": {
-            "name": "NETWORK_IS_PENDING_FRIEND",
-            "comment": "This function is hard-coded to always return 0.",
-            "jhash": "0x5C85FF81",
-            "params": [
-                {
-                    "type": "Any",
-                    "name": "p0"
-                }
-            ],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0x8B0C2964BA471961": {
-            "name": "_0x8B0C2964BA471961",
-            "comment": "MulleDK19: This function is hard-coded to always return 0.",
-            "params": [],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0x88B588B41FF7868E": {
-            "name": "_0x88B588B41FF7868E",
-            "comment": "MulleDK19: This function is hard-coded to always return 0.",
-            "params": [],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0x67FC09BC554A75E5": {
-            "name": "_0x67FC09BC554A75E5",
-            "comment": "MulleDK19: This function is hard-coded to always return 0.",
-            "params": [],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0x6FB7BB3607D27FA2": {
-            "name": "_0x6FB7BB3607D27FA2",
-            "comment": "MulleDK19: This function is hard-coded to always return 0.",
             "params": [],
             "return_type": "Any",
             "first_build": "323",
@@ -48471,6 +48645,97 @@
             "param_count": 1,
             "return_size": 1
         },
+        "0x74FB3E29E6D10FA9": {
+            "name": "_0x74FB3E29E6D10FA9",
+            "comment": "MulleDK19: This function is hard-coded to always return 0.",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0xA0FA4EC6A05DA44E": {
+            "name": "_0xA0FA4EC6A05DA44E",
+            "comment": "MulleDK19: This function is hard-coded to always return 0.",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0x58CC181719256197": {
+            "name": "_0x58CC181719256197",
+            "comment": "MulleDK19: This function is hard-coded to always return 0.",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 3,
+            "return_size": 1
+        },
+        "0x0BE73DA6984A6E33": {
+            "name": "NETWORK_IS_PENDING_FRIEND",
+            "comment": "This function is hard-coded to always return 0.",
+            "jhash": "0x5C85FF81",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0x8B0C2964BA471961": {
+            "name": "_0x8B0C2964BA471961",
+            "comment": "MulleDK19: This function is hard-coded to always return 0.",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0x88B588B41FF7868E": {
+            "name": "_0x88B588B41FF7868E",
+            "comment": "MulleDK19: This function is hard-coded to always return 0.",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0x67FC09BC554A75E5": {
+            "name": "_0x67FC09BC554A75E5",
+            "comment": "MulleDK19: This function is hard-coded to always return 0.",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
+        "0x6FB7BB3607D27FA2": {
+            "name": "_0x6FB7BB3607D27FA2",
+            "comment": "MulleDK19: This function is hard-coded to always return 0.",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
         "0xC7BE335216B5EC7C": {
             "name": "_0xC7BE335216B5EC7C",
             "comment": "",
@@ -48847,6 +49112,16 @@
             "param_count": 1,
             "return_size": 1
         },
+        "0x1077788E268557C2": {
+            "name": "NETWORK_IS_SIGNED_ONLINE",
+            "comment": "Returns whether the game is not in offline mode.\n\nseemed not to work for some ppl",
+            "jhash": "0x6E5BDCE2",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
         "0xD82CF8E64C8729D8": {
             "name": "IS_SPHERE_VISIBLE_TO_ANOTHER_MACHINE",
             "comment": "",
@@ -49081,52 +49356,6 @@
             "param_count": 3,
             "return_size": 1
         },
-        "0x8BE1146DFD5D4468": {
-            "name": "NETWORK_ACCESS_TUNABLE_INT",
-            "comment": "Some of the tunable contexts used in the PC scripts:\n\n- \"CONTENT_MODIFIER_MP_FM_RACES\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_SEA\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_AIR\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CYCLE\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_BIKE\"\n- \"CONTENT_MODIFIER_MP_FM_MISSIONS\"\n- \"CONTENT_MODIFIER_MP_FM_CONTACT\"\n- \"CONTENT_MODIFIER_MP_FM_RANDOM\"\n- \"CONTENT_MODIFIER_MP_FM_VERSUS\"\n- \"CONTENT_MODIFIER_MP_FM_LTS\"\n- \"CONTENT_MODIFIER_MP_FM_CAPTURE\"\n- \"CONTENT_MODIFIER_MP_FM_DM\"\n- \"CONTENT_MODIFIER_MP_FM_SURVIVAL\"\n- \"CONTENT_MODIFIER_MP_FM_GANG_ATTACK\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"BASE_GLOBALS\"\n- \"MP_GLOBAL\"\n\nand some of the tunable names used in the PC scripts:\n\n- \"XP_MULTIPLIER\"\n- \"CASH_MULTIPLIER\"\n- \"ARMOUR_REWARD_GIFT\"\n- \"TOGGLE_CREATORS_OFF\"\n- \"MULTIPLAYER_DISABLED\"",
-            "jhash": "0xE4B3726A",
-            "params": [
-                {
-                    "type": "const char*",
-                    "name": "tunableContext"
-                },
-                {
-                    "type": "const char*",
-                    "name": "tunableName"
-                },
-                {
-                    "type": "int*",
-                    "name": "value"
-                }
-            ],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 3,
-            "return_size": 1
-        },
-        "0x40FCE03E50E8DBE8": {
-            "name": "NETWORK_ACCESS_TUNABLE_INT_HASH",
-            "comment": "",
-            "jhash": "0xB2E83B75",
-            "params": [
-                {
-                    "type": "Hash",
-                    "name": "tunableContext"
-                },
-                {
-                    "type": "Hash",
-                    "name": "tunableName"
-                },
-                {
-                    "type": "int*",
-                    "name": "value"
-                }
-            ],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 3,
-            "return_size": 1
-        },
         "0x3A8B55FDA4C8DDEF": {
             "name": "_0x3A8B55FDA4C8DDEF",
             "comment": "",
@@ -49190,6 +49419,52 @@
             ],
             "return_type": "Any",
             "first_build": "393",
+            "param_count": 3,
+            "return_size": 1
+        },
+        "0x8BE1146DFD5D4468": {
+            "name": "NETWORK_ACCESS_TUNABLE_INT",
+            "comment": "Some of the tunable contexts used in the PC scripts:\n\n- \"CONTENT_MODIFIER_MP_FM_RACES\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_SEA\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CAR\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_AIR\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_CYCLE\"\n- \"CONTENT_MODIFIER_MP_FM_RACES_BIKE\"\n- \"CONTENT_MODIFIER_MP_FM_MISSIONS\"\n- \"CONTENT_MODIFIER_MP_FM_CONTACT\"\n- \"CONTENT_MODIFIER_MP_FM_RANDOM\"\n- \"CONTENT_MODIFIER_MP_FM_VERSUS\"\n- \"CONTENT_MODIFIER_MP_FM_LTS\"\n- \"CONTENT_MODIFIER_MP_FM_CAPTURE\"\n- \"CONTENT_MODIFIER_MP_FM_DM\"\n- \"CONTENT_MODIFIER_MP_FM_SURVIVAL\"\n- \"CONTENT_MODIFIER_MP_FM_GANG_ATTACK\"\n- \"CONTENT_MODIFIER_MP_FM_BASEJUMP\"\n- \"BASE_GLOBALS\"\n- \"MP_GLOBAL\"\n\nand some of the tunable names used in the PC scripts:\n\n- \"XP_MULTIPLIER\"\n- \"CASH_MULTIPLIER\"\n- \"ARMOUR_REWARD_GIFT\"\n- \"TOGGLE_CREATORS_OFF\"\n- \"MULTIPLAYER_DISABLED\"",
+            "jhash": "0xE4B3726A",
+            "params": [
+                {
+                    "type": "const char*",
+                    "name": "tunableContext"
+                },
+                {
+                    "type": "const char*",
+                    "name": "tunableName"
+                },
+                {
+                    "type": "int*",
+                    "name": "value"
+                }
+            ],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 3,
+            "return_size": 1
+        },
+        "0x40FCE03E50E8DBE8": {
+            "name": "NETWORK_ACCESS_TUNABLE_INT_HASH",
+            "comment": "",
+            "jhash": "0xB2E83B75",
+            "params": [
+                {
+                    "type": "Hash",
+                    "name": "tunableContext"
+                },
+                {
+                    "type": "Hash",
+                    "name": "tunableName"
+                },
+                {
+                    "type": "int*",
+                    "name": "value"
+                }
+            ],
+            "return_type": "bool",
+            "first_build": "323",
             "param_count": 3,
             "return_size": 1
         },
@@ -50121,6 +50396,28 @@
             "return_type": "bool",
             "first_build": "323",
             "param_count": 2,
+            "return_size": 1
+        },
+        "0x0CF6CC51AA18F0F8": {
+            "name": "_0x0CF6CC51AA18F0F8",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "1180",
+            "param_count": 3,
             "return_size": 1
         },
         "0x60EDD13EB3AC1FF3": {
@@ -51555,6 +51852,13 @@
             "param_count": 3,
             "return_size": 1
         },
+        "0x350C23949E43686C": {
+            "name": "_0x350C23949E43686C",
+            "comment": "",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "323"
+        },
         "0xD414BE129BB81B32": {
             "name": "_0xD414BE129BB81B32",
             "comment": "",
@@ -51564,13 +51868,6 @@
         },
         "0x0E3A041ED6AC2B45": {
             "name": "_0x0E3A041ED6AC2B45",
-            "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "first_build": "323"
-        },
-        "0x350C23949E43686C": {
-            "name": "_0x350C23949E43686C",
             "comment": "",
             "params": [],
             "return_type": "Any",
@@ -51651,6 +51948,81 @@
             "return_type": "int",
             "first_build": "323",
             "param_count": 2,
+            "return_size": 1
+        },
+        "0xCE4E5D9B0A4FF560": {
+            "name": "NETWORK_GET_ENTITY_FROM_NETWORK_ID",
+            "comment": "",
+            "jhash": "0x5B912C3F",
+            "params": [
+                {
+                    "type": "int",
+                    "name": "netId"
+                }
+            ],
+            "return_type": "Entity",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0x367B936610BA360C": {
+            "name": "NET_TO_VEH",
+            "comment": "",
+            "jhash": "0x7E02FAEA",
+            "params": [
+                {
+                    "type": "int",
+                    "name": "netHandle"
+                }
+            ],
+            "return_type": "Vehicle",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0xBDCD95FC216A8B3E": {
+            "name": "NET_TO_PED",
+            "comment": "gets the ped id of a network id",
+            "jhash": "0x87717DD4",
+            "params": [
+                {
+                    "type": "int",
+                    "name": "netHandle"
+                }
+            ],
+            "return_type": "Ped",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0xD8515F5FEA14CB3F": {
+            "name": "NET_TO_OBJ",
+            "comment": "gets the object id of a network id",
+            "jhash": "0x27AA14D8",
+            "params": [
+                {
+                    "type": "int",
+                    "name": "netHandle"
+                }
+            ],
+            "return_type": "Object",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0xBFFEAB45A9A9094A": {
+            "name": "NET_TO_ENT",
+            "comment": "gets the entity id of a network id",
+            "jhash": "0x5E149683",
+            "params": [
+                {
+                    "type": "int",
+                    "name": "netHandle"
+                }
+            ],
+            "return_type": "Entity",
+            "first_build": "323",
+            "param_count": 1,
             "return_size": 1
         },
         "0x37D5F739FD494675": {
@@ -53280,6 +53652,15 @@
             "param_count": 1,
             "return_size": 1
         },
+        "0xFAC18E7356BD3210": {
+            "name": "_0xFAC18E7356BD3210",
+            "comment": "",
+            "params": [],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 0,
+            "return_size": 0
+        },
         "0xA60BB5CE242BB254": {
             "name": "NETWORK_HOST_TRANSITION",
             "comment": "",
@@ -54192,16 +54573,6 @@
             "name": "NETWORK_IS_SIGNED_IN",
             "comment": "Returns whether the player is signed into Social Club.",
             "jhash": "0xADD0B40F",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
-        "0x1077788E268557C2": {
-            "name": "NETWORK_IS_SIGNED_ONLINE",
-            "comment": "Returns whether the game is not in offline mode.\n\nseemed not to work for some ppl",
-            "jhash": "0x6E5BDCE2",
             "params": [],
             "return_type": "bool",
             "first_build": "323",
@@ -56936,52 +57307,6 @@
             "param_count": 0,
             "return_size": 1
         },
-        "0xD66C9E72B3CC4982": {
-            "name": "_0xD66C9E72B3CC4982",
-            "comment": "",
-            "params": [
-                {
-                    "type": "Any*",
-                    "name": "p0"
-                },
-                {
-                    "type": "Any",
-                    "name": "p1"
-                }
-            ],
-            "return_type": "int",
-            "first_build": "323",
-            "param_count": 2,
-            "return_size": 1
-        },
-        "0x36391F397731595D": {
-            "name": "_0x36391F397731595D",
-            "comment": "",
-            "params": [
-                {
-                    "type": "Any",
-                    "name": "p0"
-                }
-            ],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0xDEB2B99A1AF1A2A6": {
-            "name": "_0xDEB2B99A1AF1A2A6",
-            "comment": "",
-            "params": [
-                {
-                    "type": "Any",
-                    "name": "p0"
-                }
-            ],
-            "return_type": "Any",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
         "0x5A6FFA2433E2F14C": {
             "name": "_0x5A6FFA2433E2F14C",
             "comment": "",
@@ -57112,6 +57437,52 @@
             "first_build": "323",
             "param_count": 1,
             "return_size": 0
+        },
+        "0xD66C9E72B3CC4982": {
+            "name": "_0xD66C9E72B3CC4982",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any*",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "int",
+            "first_build": "323",
+            "param_count": 2,
+            "return_size": 1
+        },
+        "0x36391F397731595D": {
+            "name": "_0x36391F397731595D",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0xDEB2B99A1AF1A2A6": {
+            "name": "_0xDEB2B99A1AF1A2A6",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
         },
         "0xC254481A4574CB2F": {
             "name": "NETWORK_STOP_SYNCHRONISED_SCENE",
@@ -57408,141 +57779,6 @@
             "return_type": "bool",
             "first_build": "323",
             "param_count": 0,
-            "return_size": 1
-        },
-        "0xCE4E5D9B0A4FF560": {
-            "name": "NETWORK_GET_ENTITY_FROM_NETWORK_ID",
-            "comment": "",
-            "jhash": "0x5B912C3F",
-            "params": [
-                {
-                    "type": "int",
-                    "name": "netId"
-                }
-            ],
-            "return_type": "Entity",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0x367B936610BA360C": {
-            "name": "NET_TO_VEH",
-            "comment": "",
-            "jhash": "0x7E02FAEA",
-            "params": [
-                {
-                    "type": "int",
-                    "name": "netHandle"
-                }
-            ],
-            "return_type": "Vehicle",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0xBDCD95FC216A8B3E": {
-            "name": "NET_TO_PED",
-            "comment": "gets the ped id of a network id",
-            "jhash": "0x87717DD4",
-            "params": [
-                {
-                    "type": "int",
-                    "name": "netHandle"
-                }
-            ],
-            "return_type": "Ped",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0xD8515F5FEA14CB3F": {
-            "name": "NET_TO_OBJ",
-            "comment": "gets the object id of a network id",
-            "jhash": "0x27AA14D8",
-            "params": [
-                {
-                    "type": "int",
-                    "name": "netHandle"
-                }
-            ],
-            "return_type": "Object",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0xBFFEAB45A9A9094A": {
-            "name": "NET_TO_ENT",
-            "comment": "gets the entity id of a network id",
-            "jhash": "0x5E149683",
-            "params": [
-                {
-                    "type": "int",
-                    "name": "netHandle"
-                }
-            ],
-            "return_type": "Entity",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0xA11700682F3AD45C": {
-            "name": "NETWORK_GET_NETWORK_ID_FROM_ENTITY",
-            "comment": "",
-            "jhash": "0x9E35DAB6",
-            "params": [
-                {
-                    "type": "Entity",
-                    "name": "entity"
-                }
-            ],
-            "return_type": "int",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0xB4C94523F023419C": {
-            "name": "VEH_TO_NET",
-            "comment": "calls from vehicle to net.\n",
-            "jhash": "0xF17634EB",
-            "params": [
-                {
-                    "type": "Vehicle",
-                    "name": "vehicle"
-                }
-            ],
-            "return_type": "int",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0x0EDEC3C276198689": {
-            "name": "PED_TO_NET",
-            "comment": "gets the network id of a ped",
-            "jhash": "0x86A0B759",
-            "params": [
-                {
-                    "type": "Ped",
-                    "name": "ped"
-                }
-            ],
-            "return_type": "int",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0x99BFDC94A603E541": {
-            "name": "OBJ_TO_NET",
-            "comment": "Lets objects spawn online simply do it like this:\n\nint createdObject = OBJ_TO_NET(CREATE_OBJECT_NO_OFFSET(oball, pCoords.x, pCoords.y, pCoords.z, 1, 0, 0));",
-            "jhash": "0x1E05F29F",
-            "params": [
-                {
-                    "type": "Object",
-                    "name": "object"
-                }
-            ],
-            "return_type": "int",
-            "first_build": "323",
-            "param_count": 1,
             "return_size": 1
         },
         "0x58C21165F6545892": {
@@ -59793,6 +60029,66 @@
             "param_count": 1,
             "return_size": 0
         },
+        "0xA11700682F3AD45C": {
+            "name": "NETWORK_GET_NETWORK_ID_FROM_ENTITY",
+            "comment": "",
+            "jhash": "0x9E35DAB6",
+            "params": [
+                {
+                    "type": "Entity",
+                    "name": "entity"
+                }
+            ],
+            "return_type": "int",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0xB4C94523F023419C": {
+            "name": "VEH_TO_NET",
+            "comment": "calls from vehicle to net.\n",
+            "jhash": "0xF17634EB",
+            "params": [
+                {
+                    "type": "Vehicle",
+                    "name": "vehicle"
+                }
+            ],
+            "return_type": "int",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0x0EDEC3C276198689": {
+            "name": "PED_TO_NET",
+            "comment": "gets the network id of a ped",
+            "jhash": "0x86A0B759",
+            "params": [
+                {
+                    "type": "Ped",
+                    "name": "ped"
+                }
+            ],
+            "return_type": "int",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0x99BFDC94A603E541": {
+            "name": "OBJ_TO_NET",
+            "comment": "Lets objects spawn online simply do it like this:\n\nint createdObject = OBJ_TO_NET(CREATE_OBJECT_NO_OFFSET(oball, pCoords.x, pCoords.y, pCoords.z, 1, 0, 0));",
+            "jhash": "0x1E05F29F",
+            "params": [
+                {
+                    "type": "Object",
+                    "name": "object"
+                }
+            ],
+            "return_type": "int",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
         "0x4A9FDE3A5A6D0437": {
             "name": "_0x4A9FDE3A5A6D0437",
             "comment": "",
@@ -59975,14 +60271,6 @@
             "first_build": "323",
             "param_count": 1,
             "return_size": 1
-        },
-        "0x9B5016A6433A68C5": {
-            "name": "_0x9B5016A6433A68C5",
-            "comment": "",
-            "jhash": "0xBD64F1B7",
-            "params": [],
-            "return_type": "Any",
-            "first_build": "323"
         },
         "0x763B4BD305338F19": {
             "name": "NETWORK_BUY_AIRSTRIKE",
@@ -60563,9 +60851,28 @@
         "0x8586789730B10CAF": {
             "name": "_0x8586789730B10CAF",
             "comment": "",
-            "params": [],
-            "return_type": "Any",
-            "first_build": "877"
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "877",
+            "param_count": 4,
+            "return_size": 0
         },
         "0x2B171E6B2F64D8DF": {
             "name": "NETWORK_EARN_FROM_CHALLENGE_WIN",
@@ -60673,6 +60980,24 @@
             "return_type": "void",
             "first_build": "323",
             "param_count": 1,
+            "return_size": 0
+        },
+        "0x31BA138F6304FB9F": {
+            "name": "_0x31BA138F6304FB9F",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 2,
             "return_size": 0
         },
         "0x45B8154E077D9E4D": {
@@ -60913,6 +61238,36 @@
             "param_count": 2,
             "return_size": 0
         },
+        "0x6B7E4FB50D5F3D65": {
+            "name": "_0x6B7E4FB50D5F3D65",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                },
+                {
+                    "type": "Any",
+                    "name": "p4"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 5,
+            "return_size": 0
+        },
         "0xB539BD8A4C1EECF8": {
             "name": "NETWORK_EARN_FROM_VEHICLE",
             "comment": "Now has 8 params.",
@@ -61023,6 +61378,60 @@
             "return_type": "void",
             "first_build": "877",
             "param_count": 2,
+            "return_size": 0
+        },
+        "0xDEE612F2D71B0308": {
+            "name": "_0xDEE612F2D71B0308",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 4,
+            "return_size": 0
+        },
+        "0x35F8DA0E8A31EF1B": {
+            "name": "_0x35F8DA0E8A31EF1B",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 1,
+            "return_size": 0
+        },
+        "0x005ACA7100BD101D": {
+            "name": "_0x005ACA7100BD101D",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 1,
             "return_size": 0
         },
         "0x7C4FCCD2E4DEB394": {
@@ -61912,6 +62321,20 @@
             "return_type": "void",
             "first_build": "323"
         },
+        "0xB1F1346FD57685D7": {
+            "name": "_0xB1F1346FD57685D7",
+            "comment": "",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "1180"
+        },
+        "0xB18AC2ECBB15CB6A": {
+            "name": "_0xB18AC2ECBB15CB6A",
+            "comment": "",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "1180"
+        },
         "0x7BF1D73DB2ECA492": {
             "name": "NETWORK_SPENT_HELI_PICKUP",
             "comment": "",
@@ -62522,6 +62945,32 @@
             "param_count": 4,
             "return_size": 0
         },
+        "0xCCB339CC970452DA": {
+            "name": "_0xCCB339CC970452DA",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 4,
+            "return_size": 0
+        },
         "0x33981D6804E62F49": {
             "name": "_0x33981D6804E62F49",
             "comment": "",
@@ -62867,6 +63316,32 @@
             "param_count": 4,
             "return_size": 0
         },
+        "0x615EB504B0788DAF": {
+            "name": "_0x615EB504B0788DAF",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 4,
+            "return_size": 0
+        },
         "0x4128464231E3CA0B": {
             "name": "_0x4128464231E3CA0B",
             "comment": "",
@@ -63133,6 +63608,14 @@
             "param_count": 1,
             "return_size": 1
         },
+        "0x9B5016A6433A68C5": {
+            "name": "_0x9B5016A6433A68C5",
+            "comment": "",
+            "jhash": "0xBD64F1B7",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "323"
+        },
         "0xCD0F5B5D932AE473": {
             "name": "_0xCD0F5B5D932AE473",
             "comment": "",
@@ -63183,6 +63666,24 @@
             "return_type": "void",
             "first_build": "323",
             "param_count": 8,
+            "return_size": 0
+        },
+        "0xAA059C615DE9DD03": {
+            "name": "_0xAA059C615DE9DD03",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 2,
             "return_size": 0
         },
         "0x641F272B52E2F0F8": {
@@ -63735,6 +64236,28 @@
             "param_count": 6,
             "return_size": 1
         },
+        "0xE05F6AEEFEB0BB02": {
+            "name": "_0xE05F6AEEFEB0BB02",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 3,
+            "return_size": 0
+        },
         "0x539E0AE3E6634B9F": {
             "name": "DELETE_OBJECT",
             "comment": "Deletes the specified object, then sets the handle pointed to by the pointer to NULL.",
@@ -64173,6 +64696,24 @@
             "param_count": 1,
             "return_size": 0
         },
+        "0x4C134B4DF76025D0": {
+            "name": "_0x4C134B4DF76025D0",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 2,
+            "return_size": 0
+        },
         "0x758A5C1B3B1E1990": {
             "name": "_0x758A5C1B3B1E1990",
             "comment": "",
@@ -64294,6 +64835,20 @@
             ],
             "return_type": "Any",
             "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0x2542269291C6AC84": {
+            "name": "_0x2542269291C6AC84",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "1180",
             "param_count": 1,
             "return_size": 1
         },
@@ -65275,6 +65830,24 @@
             "param_count": 2,
             "return_size": 0
         },
+        "0xD05A3241B9A86F19": {
+            "name": "_0xD05A3241B9A86F19",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 2,
+            "return_size": 0
+        },
         "0xF538081986E49E9D": {
             "name": "SET_FORCE_OBJECT_THIS_FRAME",
             "comment": "",
@@ -66047,6 +66620,24 @@
             ],
             "return_type": "void",
             "first_build": "323",
+            "param_count": 2,
+            "return_size": 0
+        },
+        "0x8DCA505A5C196F05": {
+            "name": "_0x8DCA505A5C196F05",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
             "param_count": 2,
             "return_size": 0
         },
@@ -68087,21 +68678,6 @@
             "param_count": 1,
             "return_size": 1
         },
-        "0x80E4A6EDDB0BE8D9": {
-            "name": "LOAD_ALL_PATH_NODES",
-            "comment": "Loads all path nodes.\n\nIf keepInMemory is true, all path nodes will be loaded and be kept in memory; otherwise, all path nodes will be loaded, but unloaded as the game sees fit.\n\n-MulleDK19.",
-            "jhash": "0xC66E28C3",
-            "params": [
-                {
-                    "type": "bool",
-                    "name": "keepInMemory"
-                }
-            ],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
         "0x46399A7895957C0E": {
             "name": "REMOVE_NAVMESH_BLOCKING_OBJECT",
             "comment": "",
@@ -69248,36 +69824,6 @@
             "return_type": "void",
             "first_build": "323",
             "param_count": 2,
-            "return_size": 0
-        },
-        "0x3AC1F7B898F30C05": {
-            "name": "RESET_PED_VISIBLE_DAMAGE",
-            "comment": "",
-            "jhash": "0xC4BC4841",
-            "params": [
-                {
-                    "type": "Ped",
-                    "name": "ped"
-                }
-            ],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 0
-        },
-        "0x8FE22675A5A45817": {
-            "name": "CLEAR_PED_BLOOD_DAMAGE",
-            "comment": "",
-            "jhash": "0xF7ADC960",
-            "params": [
-                {
-                    "type": "Ped",
-                    "name": "ped"
-                }
-            ],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 1,
             "return_size": 0
         },
         "0x56E3B78C5408D9F4": {
@@ -74614,6 +75160,36 @@
             "param_count": 1,
             "return_size": 0
         },
+        "0x3AC1F7B898F30C05": {
+            "name": "RESET_PED_VISIBLE_DAMAGE",
+            "comment": "",
+            "jhash": "0xC4BC4841",
+            "params": [
+                {
+                    "type": "Ped",
+                    "name": "ped"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 0
+        },
+        "0x8FE22675A5A45817": {
+            "name": "CLEAR_PED_BLOOD_DAMAGE",
+            "comment": "",
+            "jhash": "0xF7ADC960",
+            "params": [
+                {
+                    "type": "Ped",
+                    "name": "ped"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 0
+        },
         "0x97B0DB5B4AA74E77": {
             "name": "RESET_PED_WEAPON_MOVEMENT_CLIPSET",
             "comment": "",
@@ -74936,6 +75512,13 @@
             "first_build": "463",
             "param_count": 2,
             "return_size": 0
+        },
+        "0xDFE68C4B787E1BFB": {
+            "name": "_0xDFE68C4B787E1BFB",
+            "comment": "",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "1180"
         },
         "0xB195FFA8042FC5C3": {
             "name": "SET_DRIVER_ABILITY",
@@ -81247,16 +81830,6 @@
             "param_count": 1,
             "return_size": 1
         },
-        "0x74556E1420867ECA": {
-            "name": "IS_PLAYER_LOGGING_IN_NP",
-            "comment": "this function is hard-coded to always return 0.",
-            "jhash": "0x8F72FAD0",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
         "0x2F41A3BAE005E5FA": {
             "name": "_0x2F41A3BAE005E5FA",
             "comment": "",
@@ -81709,6 +82282,16 @@
             "param_count": 2,
             "return_size": 1
         },
+        "0x74556E1420867ECA": {
+            "name": "IS_PLAYER_LOGGING_IN_NP",
+            "comment": "this function is hard-coded to always return 0.",
+            "jhash": "0x8F72FAD0",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
         "0xDD2620B7B9D16FF1": {
             "name": "_0xDD2620B7B9D16FF1",
             "comment": "2 occurrences in agency_heist3a. p1 was 0.7f then 0.4f.",
@@ -81798,6 +82381,20 @@
             "return_type": "int",
             "first_build": "323",
             "param_count": 0,
+            "return_size": 1
+        },
+        "0x1FC200409F10E6F1": {
+            "name": "_0x1FC200409F10E6F1",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "1180",
+            "param_count": 1,
             "return_size": 1
         },
         "0xB6997A7EB3F5C8C0": {
@@ -82592,6 +83189,16 @@
             "param_count": 1,
             "return_size": 1
         },
+        "0xF25D331DC2627BBC": {
+            "name": "IS_PLAYER_ONLINE",
+            "comment": "Returns TRUE if the game is in online mode and FALSE if in offline mode.\n\nThis is an alias for NETWORK_IS_SIGNED_ONLINE.",
+            "jhash": "0x9FAB6729",
+            "params": [],
+            "return_type": "bool",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
+        },
         "0x5E9564D8246B909A": {
             "name": "IS_PLAYER_PLAYING",
             "comment": "Checks whether the specified player has a Ped, the Ped is not dead, is not injured and is not arrested.",
@@ -82841,16 +83448,6 @@
             "return_type": "Any",
             "first_build": "372",
             "param_count": 1,
-            "return_size": 1
-        },
-        "0xF25D331DC2627BBC": {
-            "name": "IS_PLAYER_ONLINE",
-            "comment": "Returns TRUE if the game is in online mode and FALSE if in offline mode.\n\nThis is an alias for NETWORK_IS_SIGNED_ONLINE.",
-            "jhash": "0x9FAB6729",
-            "params": [],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 0,
             "return_size": 1
         },
         "0xA5EDC40EF369B48D": {
@@ -83731,6 +84328,24 @@
             ],
             "return_type": "void",
             "first_build": "323",
+            "param_count": 2,
+            "return_size": 0
+        },
+        "0xEE4EBDD2593BA844": {
+            "name": "_0xEE4EBDD2593BA844",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
             "param_count": 2,
             "return_size": 0
         },
@@ -89910,6 +90525,20 @@
             "param_count": 1,
             "return_size": 0
         },
+        "0x9572BD4DD6B72122": {
+            "name": "_0x9572BD4DD6B72122",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 1,
+            "return_size": 0
+        },
         "0x203B381133817079": {
             "name": "_0x203B381133817079",
             "comment": "",
@@ -90185,29 +90814,6 @@
             "param_count": 4,
             "return_size": 0
         },
-        "0x7EEC2A316C250073": {
-            "name": "_0x7EEC2A316C250073",
-            "comment": "_PLAYSTATS_ROB_ARMOURD_TRUCK",
-            "jhash": "0x30558CFD",
-            "params": [
-                {
-                    "type": "Any",
-                    "name": "p0"
-                },
-                {
-                    "type": "Any",
-                    "name": "p1"
-                },
-                {
-                    "type": "Any",
-                    "name": "p2"
-                }
-            ],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 3,
-            "return_size": 0
-        },
         "0xC729991A9065376E": {
             "name": "_0xC729991A9065376E",
             "comment": "",
@@ -90265,6 +90871,20 @@
             "return_type": "void",
             "first_build": "323",
             "param_count": 5,
+            "return_size": 0
+        },
+        "0x320C35147D5B5DDD": {
+            "name": "_0x320C35147D5B5DDD",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 1,
             "return_size": 0
         },
         "0xBE509B0A3693DE8B": {
@@ -93018,36 +93638,6 @@
             "param_count": 1,
             "return_size": 0
         },
-        "0x963D27A58DF860AC": {
-            "name": "REQUEST_MODEL",
-            "comment": "Request a model to be loaded into memory\n\nLooking it the disassembly, it seems like it actually returns the model if it's already loaded.\n",
-            "jhash": "0xFFF1B500",
-            "params": [
-                {
-                    "type": "Hash",
-                    "name": "model"
-                }
-            ],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 0
-        },
-        "0x923CB32A3B874FCB": {
-            "name": "REQUEST_COLLISION_FOR_MODEL",
-            "comment": "",
-            "jhash": "0x3930C042",
-            "params": [
-                {
-                    "type": "Hash",
-                    "name": "model"
-                }
-            ],
-            "return_type": "void",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 0
-        },
         "0x41B4893843BBDB74": {
             "name": "REQUEST_IPL",
             "comment": "Exemple: REQUEST_IPL(\"TrevorsTrailerTrash\");\n\nIPL + Coords: http://pastebin.com/FyV5mMma",
@@ -93067,6 +93657,36 @@
             "name": "REQUEST_MENU_PED_MODEL",
             "comment": "",
             "jhash": "0x48CEB6B4",
+            "params": [
+                {
+                    "type": "Hash",
+                    "name": "model"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 0
+        },
+        "0x963D27A58DF860AC": {
+            "name": "REQUEST_MODEL",
+            "comment": "Request a model to be loaded into memory\n\nLooking it the disassembly, it seems like it actually returns the model if it's already loaded.\n",
+            "jhash": "0xFFF1B500",
+            "params": [
+                {
+                    "type": "Hash",
+                    "name": "model"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "323",
+            "param_count": 1,
+            "return_size": 0
+        },
+        "0x923CB32A3B874FCB": {
+            "name": "REQUEST_COLLISION_FOR_MODEL",
+            "comment": "",
+            "jhash": "0x3930C042",
             "params": [
                 {
                     "type": "Hash",
@@ -94496,16 +95116,6 @@
         }
     },
     "UNK": {
-        "0xF2CA003F167E21D2": {
-            "name": "_0xF2CA003F167E21D2",
-            "comment": "MulleDK19: This function is hard-coded to always return 0.",
-            "jhash": "0x106C8317",
-            "params": [],
-            "return_type": "int",
-            "first_build": "323",
-            "param_count": 0,
-            "return_size": 1
-        },
         "0x8AA464D4E0F6ACCD": {
             "name": "_0x8AA464D4E0F6ACCD",
             "comment": "",
@@ -94595,6 +95205,16 @@
             "first_build": "323",
             "param_count": 1,
             "return_size": 0
+        },
+        "0xF2CA003F167E21D2": {
+            "name": "_0xF2CA003F167E21D2",
+            "comment": "MulleDK19: This function is hard-coded to always return 0.",
+            "jhash": "0x106C8317",
+            "params": [],
+            "return_type": "int",
+            "first_build": "323",
+            "param_count": 0,
+            "return_size": 1
         }
     },
     "VEHICLE": {
@@ -96165,6 +96785,20 @@
             "param_count": 1,
             "return_size": 1
         },
+        "0xD0917A423314BBA8": {
+            "name": "_0xD0917A423314BBA8",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "1180",
+            "param_count": 1,
+            "return_size": 1
+        },
         "0xCBDB9B923CACC92D": {
             "name": "_GET_CARGOBOB_HOOK_POSITION",
             "comment": "Gets the position of the cargobob hook, in world coords.",
@@ -96221,6 +96855,52 @@
             "return_type": "Any",
             "first_build": "505",
             "param_count": 1,
+            "return_size": 1
+        },
+        "0x51F30DB60626A20E": {
+            "name": "_0x51F30DB60626A20E",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                },
+                {
+                    "type": "Any",
+                    "name": "p4"
+                },
+                {
+                    "type": "Any",
+                    "name": "p5"
+                },
+                {
+                    "type": "Any",
+                    "name": "p6"
+                },
+                {
+                    "type": "Any",
+                    "name": "p7"
+                },
+                {
+                    "type": "Any",
+                    "name": "p8"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "1180",
+            "param_count": 9,
             "return_size": 1
         },
         "0x9078C0C5EF8C19E9": {
@@ -97194,6 +97874,20 @@
             "param_count": 1,
             "return_size": 1
         },
+        "0xEA12BD130D7569A1": {
+            "name": "_0xEA12BD130D7569A1",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "1180",
+            "param_count": 1,
+            "return_size": 1
+        },
         "0xA916396DF4154EE3": {
             "name": "_CAN_VEHICLE_PARACHUTE_BE_ACTIVATED",
             "comment": "",
@@ -97405,6 +98099,20 @@
             ],
             "return_type": "int",
             "first_build": "323",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0xF846AA63DF56B804": {
+            "name": "_0xF846AA63DF56B804",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "1180",
             "param_count": 1,
             "return_size": 1
         },
@@ -97676,6 +98384,20 @@
             "param_count": 2,
             "return_size": 0
         },
+        "0xDA62027C8BDB326E": {
+            "name": "_0xDA62027C8BDB326E",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "1180",
+            "param_count": 1,
+            "return_size": 1
+        },
         "0x50634E348C8D44EF": {
             "name": "_0x50634E348C8D44EF",
             "comment": "",
@@ -97687,6 +98409,20 @@
             ],
             "return_type": "Any",
             "first_build": "372",
+            "param_count": 1,
+            "return_size": 1
+        },
+        "0xE43701C36CAFF1A4": {
+            "name": "_0xE43701C36CAFF1A4",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "Any",
+            "first_build": "1180",
             "param_count": 1,
             "return_size": 1
         },
@@ -98684,21 +99420,6 @@
             "name": "_IS_VEHICLE_MOD_LOAD_DONE",
             "comment": "Returns whether or not the vehicle has a CVehicleStreamRequestGfx that's trying to load mods.\n\nTrue if it isn't loading mods, false if it is.",
             "jhash": "0x112D637A",
-            "params": [
-                {
-                    "type": "Vehicle",
-                    "name": "vehicle"
-                }
-            ],
-            "return_type": "bool",
-            "first_build": "323",
-            "param_count": 1,
-            "return_size": 1
-        },
-        "0xAE3FEE8709B39DCB": {
-            "name": "_0xAE3FEE8709B39DCB",
-            "comment": "",
-            "jhash": "0xE39DAF36",
             "params": [
                 {
                     "type": "Vehicle",
@@ -99792,11 +100513,15 @@
                 {
                     "type": "Any",
                     "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
                 }
             ],
             "return_type": "Any",
             "first_build": "1011",
-            "param_count": 2,
+            "param_count": 3,
             "return_size": 1
         },
         "0x46E571A0E20D01F1": {
@@ -101186,6 +101911,24 @@
             "param_count": 2,
             "return_size": 0
         },
+        "0x97841634EF7DF1D6": {
+            "name": "_0x97841634EF7DF1D6",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 2,
+            "return_size": 0
+        },
         "0x26D99D5A82FD18E8": {
             "name": "_0x26D99D5A82FD18E8",
             "comment": "",
@@ -101233,6 +101976,31 @@
             ],
             "return_type": "void",
             "first_build": "1103",
+            "param_count": 2,
+            "return_size": 0
+        },
+        "0x75627043C6AA90AD": {
+            "name": "_0x75627043C6AA90AD",
+            "comment": "",
+            "params": [],
+            "return_type": "Any",
+            "first_build": "1180"
+        },
+        "0x8235F1BEAD557629": {
+            "name": "_0x8235F1BEAD557629",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
             "param_count": 2,
             "return_size": 0
         },
@@ -101648,6 +102416,20 @@
             "param_count": 2,
             "return_size": 0
         },
+        "0x430A7631A84C9BE7": {
+            "name": "_0x430A7631A84C9BE7",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 1,
+            "return_size": 0
+        },
         "0xA178472EBB8AE60D": {
             "name": "SET_HELI_BLADES_FULL_SPEED",
             "comment": "Equivalent of SET_HELI_BLADES_SPEED(vehicleHandle, 1.0f);\n\nthis native works on planes to?",
@@ -101680,6 +102462,50 @@
             "return_type": "void",
             "first_build": "323",
             "param_count": 2,
+            "return_size": 0
+        },
+        "0x94A68DA412C4007D": {
+            "name": "_0x94A68DA412C4007D",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 2,
+            "return_size": 0
+        },
+        "0x0A3F820A9A9A9AC5": {
+            "name": "_0x0A3F820A9A9A9AC5",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Any",
+                    "name": "p0"
+                },
+                {
+                    "type": "Any",
+                    "name": "p1"
+                },
+                {
+                    "type": "Any",
+                    "name": "p2"
+                },
+                {
+                    "type": "Any",
+                    "name": "p3"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 4,
             "return_size": 0
         },
         "0x6E0859B530A365CC": {
@@ -102971,6 +103797,24 @@
             "param_count": 2,
             "return_size": 0
         },
+        "0xF4B2ED59DEB5D774": {
+            "name": "_SET_VEHICLE_BOMBS",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Vehicle",
+                    "name": "vehicle"
+                },
+                {
+                    "type": "int",
+                    "name": "amount"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
+            "param_count": 2,
+            "return_size": 0
+        },
         "0xE4E2FD323574965C": {
             "name": "_0xE4E2FD323574965C",
             "comment": "",
@@ -103333,6 +104177,24 @@
             ],
             "return_type": "void",
             "first_build": "323",
+            "param_count": 2,
+            "return_size": 0
+        },
+        "0x9BDA23BF666F0855": {
+            "name": "_SET_VEHICLE_COUNTERMEASURES",
+            "comment": "",
+            "params": [
+                {
+                    "type": "Vehicle",
+                    "name": "vehicle"
+                },
+                {
+                    "type": "int",
+                    "name": "amount"
+                }
+            ],
+            "return_type": "void",
+            "first_build": "1180",
             "param_count": 2,
             "return_size": 0
         },
